@@ -4,6 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <title>Document</title>
 </head>
 
@@ -22,10 +26,10 @@
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list site-list">
           <li class="site-list__item site-list__item--current">
-            <a class="site-list__link" href="#">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            <a class="site-list__link" href="#">Каталог продукции</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="form.html">Подбор программы</a>
@@ -40,9 +44,36 @@
         <h1 class="main-catalog__heading">Каталог продукции</h1>
         <article class="food-catalog__item product">
           <picture>
+            <!-- desktop webp -->
+            <source type="img/webp" media="(min-width: 1220px)"
+              srcset="images/chicken-small-desktop@1x.png@1x.webp 1x, images/chicken-small-desktop@2x.webp 2x"
+              width="169" height="210">
+
+            <!-- tablet webp -->
+            <source type="img/webp" media="(min-width: 768px)"
+              srcset="images/chicken-small-tablet@1x.webp 1x, images/chicken-small-tablet@2x.webp 2x" width="200"
+              height="210">
+
+            <!-- mobile webp -->
+            <source type="img/webp"
+              srcset="images/chicken-small-tablet@1x.webp 1x, images/chicken-small-tablet@2x.webp 2x" width="140"
+              height="107">
+
+            <!-- desktop -->
+            <source type="image/png" media="(min-width: 1220px)"
+              srcset="images/chicken-small-desktop@1x.png 1x, images/chicken-small-desktop@2x.png 2x" width="169"
+              height="210">
+
+            <!-- tablet -->
+            <source type="image/png" media="(min-width: 768px)"
+              srcset="images/chicken-small-tablet@1x.png 1x, images/chicken-small-tablet@2x.png 2x" width="200"
+              height="210">
+
+            <!-- mobile -->
             <img class="product__image" src="images/chicken-small-mobile@1x.png"
               srcset="images/chicken-small-mobile@2x.png" width="140" height="107" alt="Упаковка продукта">
           </picture>
+
           <div class="product__info">
             <h2 class="product__title">Cat Energy PRO 500 г</h2>
             <table class="product__info-table">
@@ -64,9 +95,35 @@
         </article>
         <article class="food-catalog__item product">
           <picture>
+            <!-- desktop webp -->
+            <source type="img/webp" media="(min-width: 1220px)"
+              srcset="images/chicken-big-desktop@1x.png@1x.webp 1x, images/chicken-big-desktop@2x.webp 2x" width="169"
+              height="210">
+
+            <!-- tablet webp -->
+            <source type="img/webp" media="(min-width: 768px)"
+              srcset="images/chicken-big-tablet@1x.webp 1x, images/chicken-big-tablet@2x.webp 2x" width="200"
+              height="210">
+
+            <!-- mobile webp -->
+            <source type="img/webp" srcset="images/chicken-big-tablet@1x.webp 1x, images/chicken-big-tablet@2x.webp 2x"
+              width="140" height="107">
+
+            <!-- desktop -->
+            <source type="image/png" media="(min-width: 1220px)"
+              srcset="images/chicken-big-desktop@1x.png 1x, images/chicken-big-desktop@2x.png 2x" width="169"
+              height="210">
+
+            <!-- tablet -->
+            <source type="image/png" media="(min-width: 768px)"
+              srcset="images/chicken-big-tablet@1x.png 1x, images/chicken-big-tablet@2x.png 2x" width="200"
+              height="210">
+
+            <!-- mobile -->
             <img class="product__image" src="images/chicken-big-mobile@1x.png" srcset="images/chicken-big-mobile@2x.png"
               width="140" height="107" alt="Упаковка продукта">
           </picture>
+
           <div class="product__info">
             <h2 class="product__title">Cat Energy PRO 1000 г</h2>
             <table class="product__info-table">
@@ -88,9 +145,34 @@
         </article>
         <article class="food-catalog__item product">
           <picture>
+            <!-- desktop webp -->
+            <source type="img/webp" media="(min-width: 1220px)"
+              srcset="images/fish-small-desktop@1x.png@1x.webp 1x, images/fish-small-desktop@2x.webp 2x" width="169"
+              height="210">
+
+            <!-- tablet webp -->
+            <source type="img/webp" media="(min-width: 768px)"
+              srcset="images/fish-small-tablet@1x.webp 1x, images/fish-small-tablet@2x.webp 2x" width="200"
+              height="210">
+
+            <!-- mobile webp -->
+            <source type="img/webp" srcset="images/fish-small-tablet@1x.webp 1x, images/fish-small-tablet@2x.webp 2x"
+              width="140" height="107">
+
+            <!-- desktop -->
+            <source type="image/png" media="(min-width: 1220px)"
+              srcset="images/fish-small-desktop@1x.png 1x, images/fish-small-desktop@2x.png 2x" width="169"
+              height="210">
+
+            <!-- tablet -->
+            <source type="image/png" media="(min-width: 768px)"
+              srcset="images/fish-small-tablet@1x.png 1x, images/fish-small-tablet@2x.png 2x" width="200" height="210">
+
+            <!-- mobile -->
             <img class="product__image" src="images/fish-small-mobile@1x.png" srcset="images/fish-small-mobile@2x.png"
               width="140" height="107" alt="Упаковка продукта">
           </picture>
+
           <div class="product__info">
             <h2 class="product__title">Cat Energy PRO 500 г</h2>
             <table class="product__info-table">
@@ -112,6 +194,28 @@
         </article>
         <article class="food-catalog__item product">
           <picture>
+            <!-- desktop webp -->
+            <source type="img/webp" media="(min-width: 1220px)"
+              srcset="images/fish-big-desktop@1x.png@1x.webp 1x, images/fish-big-desktop@2x.webp 2x" width="163"
+              height="174">
+
+            <!-- tablet webp -->
+            <source type="img/webp" media="(min-width: 768px)"
+              srcset="images/fish-big-tablet@1x.webp 1x, images/fish-big-tablet@2x.webp 2x" width="200" height="210">
+
+            <!-- mobile webp -->
+            <source type="img/webp" srcset="images/fish-big-tablet@1x.webp 1x, images/fish-big-tablet@2x.webp 2x"
+              width="140" height="107">
+
+            <!-- desktop -->
+            <source type="image/png" media="(min-width: 1220px)"
+              srcset="images/fish-big-desktop@1x.png 1x, images/fish-big-desktop@2x.png 2x" width="169" height="210">
+
+            <!-- tablet -->
+            <source type="image/png" media="(min-width: 768px)"
+              srcset="images/fish-big-tablet@1x.png 1x, images/fish-big-tablet@2x.png 2x" width="200" height="210">
+
+            <!-- mobile -->
             <img class="product__image" src="images/fish-big-mobile@1x.png" srcset="images/fish-big-mobile@2x.png"
               width="140" height="107" alt="Упаковка продукта">
           </picture>
@@ -136,8 +240,34 @@
         </article>
         <article class="food-catalog__item product">
           <picture>
-            <img class="product__image" src="images/uckwheat-small-mobile@1x.png"
-              srcset="images/uckwheat-small-mobile@2x.png" width="140" height="107" alt="Упаковка продукта">
+            <!-- desktop webp -->
+            <source type="img/webp" media="(min-width: 1220px)"
+              srcset="images/buckwheat-small-desktop@1x.png@1x.webp 1x, images/buckwheat-small-desktop@2x.webp 2x"
+              width="169" height="210">
+
+            <!-- tablet webp -->
+            <source type="img/webp" media="(min-width: 768px)"
+              srcset="images/buckwheat-small-tablet@1x.webp 1x, images/buckwheat-small-tablet@2x.webp 2x" width="200"
+              height="210">
+
+            <!-- mobile webp -->
+            <source type="img/webp"
+              srcset="images/buckwheat-small-tablet@1x.webp 1x, images/buckwheat-small-tablet@2x.webp 2x" width="140"
+              height="107">
+
+            <!-- desktop -->
+            <source type="image/png" media="(min-width: 1220px)"
+              srcset="images/buckwheat-small-desktop@1x.png 1x, images/buckwheat-small-desktop@2x.png 2x" width="169"
+              height="210">
+
+            <!-- tablet -->
+            <source type="image/png" media="(min-width: 768px)"
+              srcset="images/buckwheat-small-tablet@1x.png 1x, images/buckwheat-small-tablet@2x.png 2x" width="200"
+              height="210">
+
+            <!-- mobile -->
+            <img class="product__image" src="images/buckwheat-small-mobile@1x.png"
+              srcset="images/buckwheat-small-mobile@2x.png" width="140" height="107" alt="Упаковка продукта">
           </picture>
           <div class="product__info">
             <h2 class="product__title">Cat Energy SLIM 500 г</h2>
@@ -162,32 +292,32 @@
           <picture>
             <!-- desktop webp -->
             <source type="img/webp" media="(min-width: 1220px)"
-              srcset="images/uckwheat-big-desktop@1x.png@1x.webp 1x, images/uckwheat-big-desktop@2x.webp 2x" width="163"
-              height="174">
+              srcset="images/buckwheat-big-desktop@1x.png@1x.webp 1x, images/buckwheat-big-desktop@2x.webp 2x"
+              width="169" height="210">
 
             <!-- tablet webp -->
             <source type="img/webp" media="(min-width: 768px)"
-              srcset="images/uckwheat-big-tablet@1x.webp 1x, images/uckwheat-big-tablet@2x.webp 2x" width="163"
-              height="174">
+              srcset="images/buckwheat-big-tablet@1x.webp 1x, images/buckwheat-big-tablet@2x.webp 2x" width="200"
+              height="210">
 
             <!-- mobile webp -->
             <source type="img/webp"
-              srcset="images/uckwheat-big-tablet@1x.webp 1x, images/uckwheat-big-tablet@2x.webp 2x" width="72"
-              height="84">
+              srcset="images/buckwheat-big-tablet@1x.webp 1x, images/buckwheat-big-tablet@2x.webp 2x" width="140"
+              height="107">
 
             <!-- desktop -->
             <source type="image/png" media="(min-width: 1220px)"
-              srcset="images/uckwheat-big-desktop@1x.png 1x, images/uckwheat-big-desktop@2x.png 2x" width="163"
-              height="174">
+              srcset="images/buckwheat-big-desktop@1x.png 1x, images/buckwheat-big-desktop@2x.png 2x" width="169"
+              height="210">
 
             <!-- tablet -->
             <source type="image/png" media="(min-width: 768px)"
-              srcset="images/uckwheat-big-tablet@1x.png 1x, images/uckwheat-big-tablet@2x.png 2x" width="163"
-              height="174">
+              srcset="images/buckwheat-big-tablet@1x.png 1x, images/buckwheat-big-tablet@2x.png 2x" width="200"
+              height="210">
 
             <!-- mobile -->
-            <img class="product__image" src="images/uckwheat-big-mobile@1x.png"
-              srcset="images/uckwheat-big-mobile@2x.png" width="83" height="84" alt="Упаковка продукта">
+            <img class="product__image" src="images/buckwheat-big-mobile@1x.png"
+              srcset="images/buckwheat-big-mobile@2x.png" width="140" height="107" alt="Упаковка продукта">
           </picture>
           <div class="product__info">
             <h2 class="product__title">Cat Energy SLIM 1000 г</h2>
@@ -212,30 +342,30 @@
           <picture>
             <!-- desktop webp -->
             <source type="img/webp" media="(min-width: 1220px)"
-              srcset="images/rice-small-desktop@1x.png@1x.webp 1x, images/rice-small-desktop@2x.webp 2x" width="163"
-              height="174">
+              srcset="images/rice-small-desktop@1x.png@1x.webp 1x, images/rice-small-desktop@2x.webp 2x" width="169"
+              height="210">
 
             <!-- tablet webp -->
             <source type="img/webp" media="(min-width: 768px)"
-              srcset="images/rice-small-tablet@1x.webp 1x, images/rice-small-tablet@2x.webp 2x" width="163"
-              height="174">
+              srcset="images/rice-small-tablet@1x.webp 1x, images/rice-small-tablet@2x.webp 2x" width="200"
+              height="210">
 
             <!-- mobile webp -->
             <source type="img/webp" srcset="images/rice-small-tablet@1x.webp 1x, images/rice-small-tablet@2x.webp 2x"
-              width="72" height="84">
+              width="140" height="107">
 
             <!-- desktop -->
             <source type="image/png" media="(min-width: 1220px)"
-              srcset="images/rice-small-desktop@1x.png 1x, images/rice-small-desktop@2x.png 2x" width="163"
-              height="174">
+              srcset="images/rice-small-desktop@1x.png 1x, images/rice-small-desktop@2x.png 2x" width="169"
+              height="210">
 
             <!-- tablet -->
             <source type="image/png" media="(min-width: 768px)"
-              srcset="images/rice-small-tablet@1x.png 1x, images/rice-small-tablet@2x.png 2x" width="163" height="174">
+              srcset="images/rice-small-tablet@1x.png 1x, images/rice-small-tablet@2x.png 2x" width="200" height="210">
 
             <!-- mobile -->
             <img class="product__image" src="images/rice-small-mobile@1x.png" srcset="images/rice-small-mobile@2x.png"
-              width="72" height="84" alt="Упаковка продукта">
+              width="140" height="107" alt="Упаковка продукта">
           </picture>
           <div class="product__info">
             <h2 class="product__title">Cat Energy slim 500 г</h2>
