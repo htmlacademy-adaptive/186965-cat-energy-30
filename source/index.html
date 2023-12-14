@@ -5,6 +5,10 @@
   <meta charset="UTF-8">
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicons/apple.png">
+  <link rel="manifest" href="manifest.webmanifest">
   <!-- <link rel="stylesheet" href="styles/styles.css"> -->
   <script src="scripts/index.js" defer></script>
 </head>
@@ -14,8 +18,12 @@
     <div class="page-header__container">
       <a class="page-header__logo" href="#">
         <picture>
+          <source srcset="images/logo-desktop.svg" media="(min-width: 1440px)" width="202" height="59"
+            type="image/svg+xml">
+          <source srcset="images/logo-tablet.svg" media="(min-width: 768px)" width="174" height="50"
+            type="image/svg+xml">
           <img class="page-header__logo" src="images/logo-mobile.svg" width="190" height="38"
-            alt="Логотип 'Cat Energy'">
+            alt="Логотип 'Cat Energy'.">
         </picture>
       </a>
     </div>
@@ -46,9 +54,30 @@
         </div>
         <div class="show-card__image-wrapper">
           <picture>
+            <!-- desktop webp -->
+            <source type="img/webp" media="(min-width: 1440px)"
+              srcset="images/index-can-desktop@1x.webp 1x, images/index-can-desktop@2x.webp 2x" width="552"
+              height="499">
 
-            <img class="show-card__picture" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png"
-              width="280" height="270" alt="Изображение упаковки продукта">
+            <!-- tablet webp -->
+            <source type="img/webp" media="(min-width: 768px)"
+              srcset="images/index-can-tablet@1x.webp 1x, images/index-can-tablet@2x.webp 2x" width="709" height="609">
+
+            <!-- mobile webp -->
+            <source type="img/webp" srcset="images/index-can-tablet@1x.webp 1x, images/index-can-tablet@2x.webp 2x"
+              width="280" height="270">
+
+            <!-- desktop -->
+            <source type="image/png" media="(min-width: 1440px)"
+              srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x" width="552" height="499">
+
+            <!-- tablet -->
+            <source type="image/png" media="(min-width: 768px)"
+              srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x" width="709" height="609">
+
+            <!-- mobile -->
+            <img class="show-card__picture" src="images/index-can-mobile@1x.png"
+              srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Упаковка продукта.">
           </picture>
         </div>
         <div class="show-card__button-wrapper">
@@ -62,7 +91,7 @@
             <div class="programs__inner">
               <picture>
                 <img class="programs__icon" src="images/icons/icon-cat-slim.svg" width="36" height="50"
-                  alt="Иконка похудения">
+                  alt="Иконка похудения.">
               </picture>
               <h2 class="plan__name">похудение</h2>
               <p class="plan__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
@@ -76,7 +105,7 @@
             <div class="programs__inner">
               <picture>
                 <img class="programs__icon" src="images/icons/icon-cat-pro.svg" width="67" height="28"
-                  alt="Иконка набора массы">
+                  alt="Иконка набора массы.">
               </picture>
               <h2 class="plan__name">Набор массы</h2>
               <p class="plan__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro
@@ -136,13 +165,13 @@
           <div class="result__item result__item--before">
             <picture>
               <img class="result__image result__image--before" src="images/cat-before-mobile@1x.png"
-                srcset="images/index-can-mobile@2x.png" width="280" height="256" alt="Изображение кота до">
+                srcset="images/index-can-mobile@2x.png" width="280" height="256" alt="Изображение кота до.">
             </picture>
           </div>
           <div class="result__item result__item--after">
             <picture>
               <img class="result__image result__image--after" src="images/cat-after-mobile@1x.png"
-                srcset="imgages/cat-after-mobile@2x.png" width="280" height="256" alt="Изображение кота после">
+                srcset="imgages/cat-after-mobile@2x.png" width="280" height="256" alt="Изображение кота после.">
             </picture>
           </div>
           <div class="result__toggle slider__toggle">
@@ -164,7 +193,8 @@
       <div class="page-footer__map-wrapper">
       </div>
       <a class="page-footer__logo-wrapper logo" href="index.html">
-        <img class="page-footer__logo logo__image" src="images/logo-footer.svg" width="128" height="24" alt="Логотип">
+        <img class="page-footer__logo logo__image" src="images/logo-footer.svg" width="128" height="24"
+          alt="Логотип 'Cat Energy'.">
       </a>
       <div class="page-footer__social-wrapper social">
         <ul class="social__list">
