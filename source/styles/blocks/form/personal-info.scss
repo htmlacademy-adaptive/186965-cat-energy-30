@@ -1,0 +1,12 @@
+.personal-info__input {
+
+
+  &::placeholder {
+    color: $second-text-color;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,21 @@
+.show-card {
+  background-color: $green-background-opacity;
+}
+
+.show-card__name {
+  color: $third-text-color;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+
+.show-card__slogan {
+  color: $third-text-color;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+

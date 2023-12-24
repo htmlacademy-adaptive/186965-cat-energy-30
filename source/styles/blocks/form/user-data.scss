@@ -1,0 +1,32 @@
+.user-data__form-label {
+  color: $second-text-color;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+text-transform: uppercase;
+}
+
+
+.user-data__legend {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+
+.user-data__placeholder {
+  color: $second-text-color;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+text-transform: uppercase;
+}
+
+.user-data__important {
+font-family: $second-font, $font-serif, $font-serif;
+font-size: 14px;
+line-height: 16px;
+}

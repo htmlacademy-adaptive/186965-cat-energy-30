@@ -1,7 +1,37 @@
 /* GLOBAL */
 @import "./global/variables.scss";
-@import "./global/global.scss";
+@import "./global/mixins.scss";
 @import "./global/fonts.scss";
+@import "./global/visually-hidden.scss";
+@import "./global/common.scss";
+
+
 
 /* BLOCKS */
-@import "./blocks/header.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/cooperation.scss";
+
+//index.html
+@import "./blocks/index/show-card.scss";
+@import "./blocks/index/programs.scss";
+@import "./blocks/index/plans.scss";
+@import "./blocks/index/work-process.scss";
+@import "./blocks/index/methods.scss";
+@import "./blocks/index/client.scss";
+@import "./blocks/index/weight.scss";
+@import "./blocks/index/days.scss";
+@import "./blocks/index/expenses.scss";
+
+
+// form.html
+@import "./blocks/form/main-form.scss";
+@import "./blocks/form/user-data.scss";
+@import "./blocks/form/personal-info.scss";
+
+//catalog
+@import "./blocks/catalog/main-catalog.scss";
+@import "./blocks/catalog/product.scss";
+@import "./blocks/catalog/goods.scss";
+@import "./blocks/catalog/extra-goods.scss";
+@import "./blocks/catalog/cat-present.scss";
+

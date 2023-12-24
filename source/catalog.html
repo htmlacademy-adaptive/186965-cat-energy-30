@@ -8,6 +8,7 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles/styles.css">
   <title>Document</title>
 </head>
 
@@ -26,7 +27,7 @@
       </a>
     </div>
     <nav class="main-navigation main-navigation--is-closed">
-      <button class="main-navigation__toggle" type="button"><span class="visially-hidden">Открыть меню</span></button>
+      <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-navigation__wrapper">
         <ul class="main-navigation__list site-list">
           <li class="site-list__item site-list__item--current">
@@ -46,6 +47,7 @@
     <div class="main-catalog__wrapper">
       <section class="main-catalog__food-box food-catalog">
         <h1 class="main-catalog__heading">Каталог продукции</h1>
+        <h2 class="visually-hidden">Основные товары</h2>
         <article class="food-catalog__item product">
           <picture>
             <!-- desktop webp -->
@@ -79,19 +81,19 @@
           </picture>
 
           <div class="product__info">
-            <h2 class="product__title">Cat Energy PRO 500 г</h2>
+            <h3 class="product__name">Cat Energy PRO 500 г</h3>
             <table class="product__info-table">
               <tr class="product__row">
-                <td class="product__column">Масса</td>
-                <td class="product__column">500 г</td>
+                <td class="product__cell">Масса</td>
+                <td class="product__cell">500 г</td>
               </tr>
               <tr class="product__row">
-                <td class="product__column">Вкус</td>
-                <td class="product__column">Курица</td>
+                <td class="product__cell">Вкус</td>
+                <td class="product__cell">Курица</td>
               </tr>
               <tr class="product__row">
-                <td class="product__column">Цена</td>
-                <td class="product__column">700 ₽</td>
+                <td class="product__cell">Цена</td>
+                <td class="product__cell">700 ₽</td>
               </tr>
             </table>
           </div>
@@ -129,19 +131,19 @@
           </picture>
 
           <div class="product__info">
-            <h2 class="product__title">Cat Energy PRO 1000 г</h2>
+            <h3 class="product__name">Cat Energy PRO 1000 г</h3>
             <table class="product__info-table">
               <tr class="product__row">
-                <td class="product__column">Масса</td>
-                <td class="product__column">1000 г</td>
+                <td class="product__cell">Масса</td>
+                <td class="product__cell">1000 г</td>
               </tr>
               <tr class="product__row">
-                <td class="product__column">Вкус</td>
-                <td class="product__column">Курица</td>
+                <td class="product__cell">Вкус</td>
+                <td class="product__cell">Курица</td>
               </tr>
               <tr class="product__row">
-                <td class="product__column">Цена</td>
-                <td class="product__column">1000 ₽</td>
+                <td class="product__cell">Цена</td>
+                <td class="product__cell">1000 ₽</td>
               </tr>
             </table>
           </div>
@@ -178,19 +180,19 @@
           </picture>
 
           <div class="product__info">
-            <h2 class="product__title">Cat Energy PRO 500 г</h2>
+            <h3 class="product__name">Cat Energy PRO 500 г</h3>
             <table class="product__info-table">
               <tr class="product__row">
-                <td class="product__column">Масса</td>
-                <td class="product__column">500 г</td>
+                <td class="product__cell">Масса</td>
+                <td class="product__cell">500 г</td>
               </tr>
               <tr class="product__row">
-                <td class="product__column">Вкус</td>
-                <td class="product__column">Рыба</td>
+                <td class="product__cell">Вкус</td>
+                <td class="product__cell">Рыба</td>
               </tr>
               <tr class="product__row">
-                <td class="product__column">Цена</td>
-                <td class="product__column">700 ₽</td>
+                <td class="product__cell">Цена</td>
+                <td class="product__cell">700 ₽</td>
               </tr>
             </table>
           </div>
@@ -224,19 +226,19 @@
               width="140" height="107" alt="Упаковка продукта.">
           </picture>
           <div class="product__info">
-            <h2 class="product__title">Cat Energy PRO 1000 г</h2>
+            <h3 class="product__name">Cat Energy PRO 1000 г</h3>
             <table class="product__info-table">
               <tr class="product__row">
-                <td class="product__column">Масса</td>
-                <td class="product__column">1000 г</td>
+                <td class="product__cell">Масса</td>
+                <td class="product__cell">1000 г</td>
               </tr>
               <tr class="product__row">
-                <td class="product__column">Вкус</td>
-                <td class="product__column">Рыба</td>
+                <td class="product__cell">Вкус</td>
+                <td class="product__cell">Рыба</td>
               </tr>
               <tr class="product__row">
-                <td class="product__column">Цена</td>
-                <td class="product__column">1000 ₽</td>
+                <td class="product__cell">Цена</td>
+                <td class="product__cell">1000 ₽</td>
               </tr>
             </table>
           </div>
@@ -274,19 +276,19 @@
               srcset="images/buckwheat-small-mobile@2x.png 2x" width="140" height="107" alt="Упаковка продукта.">
           </picture>
           <div class="product__info">
-            <h2 class="product__title">Cat Energy SLIM 500 г</h2>
+            <h3 class="product__name">Cat Energy SLIM 500 г</h3>
             <table class="product__info-table">
               <tr class="product__row">
-                <td class="product__column">Масса</td>
-                <td class="product__column">500 г</td>
+                <td class="product__cell">Масса</td>
+                <td class="product__cell">500 г</td>
               </tr>
               <tr class="product__row">
-                <td class="product__column">Вкус</td>
-                <td class="product__column">Гречка</td>
+                <td class="product__cell">Вкус</td>
+                <td class="product__cell">Гречка</td>
               </tr>
               <tr class="product__row">
-                <td class="product__column">Цена</td>
-                <td class="product__column">400 ₽</td>
+                <td class="product__cell">Цена</td>
+                <td class="product__cell">400 ₽</td>
               </tr>
             </table>
           </div>
@@ -324,19 +326,19 @@
               srcset="images/buckwheat-big-mobile@2x.png 2x" width="140" height="107" alt="Упаковка продукта.">
           </picture>
           <div class="product__info">
-            <h2 class="product__title">Cat Energy SLIM 1000 г</h2>
+            <h3 class="product__name">Cat Energy SLIM 1000 г</h3>
             <table class="product__info-table">
               <tr class="product__row">
-                <td class="product__column">Масса</td>
-                <td class="product__column">1000 г</td>
+                <td class="product__cell">Масса</td>
+                <td class="product__cell">1000 г</td>
               </tr>
               <tr class="product__row">
-                <td class="product__column">Вкус</td>
-                <td class="product__column">Гречка</td>
+                <td class="product__cell">Вкус</td>
+                <td class="product__cell">Гречка</td>
               </tr>
               <tr class="product__row">
-                <td class="product__column">Цена</td>
-                <td class="product__column">700 ₽</td>
+                <td class="product__cell">Цена</td>
+                <td class="product__cell">700 ₽</td>
               </tr>
             </table>
           </div>
@@ -372,7 +374,7 @@
               srcset="images/rice-small-mobile@2x.png 2x" width="140" height="107" alt="Упаковка продукта.">
           </picture>
           <div class="product__info">
-            <h2 class="product__title">Cat Energy slim 500 г</h2>
+            <h3 class="product__name">Cat Energy slim 500 г</h3>
             <table class="product__info-table">
               <tr class="product__row">
                 <td class="product__cell">Масса</td>
