@@ -4,3 +4,62 @@
   font-size: 14px;
   line-height: 18px;
 }
+
+.methods__item {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: $main-button-background-color;
+  }
+}
+
+.methods__item--useful-substances {
+  &::after {
+    top: 15px;
+    left: 13px;
+    width: 30px;
+    height: 32px;
+    background-image: url("../../images/icons/stack.svg#icon-leaf");
+  }
+}
+
+.methods__item--powder {
+  &::after {
+    top: 15px;
+    left: 13px;
+    width: 26px;
+    height: 29px;
+    background-image: url("../../images/icons/stack.svg#icon-powder");
+  }
+}
+
+.methods__item--food {
+  &::after {
+    top: 15px;
+    left: 13px;
+    width: 30px;
+    height: 32px;
+    background-image: url("../../images/icons/stack.svg#icon-eat");
+  }
+}
+
+.methods__item--useful-time {
+  &::after {
+    top: 15px;
+    left: 13px;
+    width: 30px;
+    height: 32px;
+    background-image: url("../../images/icons/stack.svg#icon-time");
+  }
+}

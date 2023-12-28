@@ -30,7 +30,7 @@
     <nav class="main-navigation main-navigation--is-closed">
       <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-navigation__wrapper">
-        <ul class="main-navigation__list site-list">
+        <ul class="list-reset main-navigation__list site-list">
           <li class="site-list__item site-list__item--current">
             <a class="site-list__link" href="index.html">Главная</a>
           </li>
@@ -55,7 +55,7 @@
       <div class="user-data__wrapper">
         <fieldset class="user-data__personal personal-info">
           <legend class="visually-hidden">Информация о питомце</legend>
-          <ul class="personal-info__list">
+          <ul class="list-reset personal-info__list">
             <li class="personal-info__item">
               <label class="user-data__form-label personal-info__label" for="cat-name">ИМЯ:*</label>
               <input class="user-data__placeholder personal-info__input personal-info__input--name" type="text"
@@ -75,7 +75,7 @@
         </fieldset>
         <fieldset class="user-data__goals goals">
           <legend class="visually-hidden">Цели программы</legend>
-          <ul class="goals__list">
+          <ul class="list-reset goals__list">
             <li class="goals__item">
               <label class="user-data__form-label goals__label">
                 <input class="goals__input goals__input--weight-loss" type="radio" name="choice" checked>
@@ -102,13 +102,13 @@
         <fieldset class="user-data__contacts owner-contacts">
           <legend class="user-data__legend owner-contacts__heading">Контактные данные
             (владельца кота)</legend>
-          <ul class="owner-contacts__list">
-            <li class="owner-contacts__item">
+          <ul class="list-reset owner-contacts__list">
+            <li class="owner-contacts__item owner-contacts__item--email">
               <label class="user-data__form-label owner-contacts__label" for="email">E-mail:*</label>
               <input class="user-data__placeholder owner-contacts__input owner-contacts__input--email" type="email"
                 name="email" placeholder="kuklachev@gmail.com" id="email" required>
             </li>
-            <li class="owner-contacts__item">
+            <li class="owner-contacts__item owner-contacts__item--phone" >
               <label class="user-data__form-label owner-contacts__label" for="phone">Телефон:*</label>
               <input class="user-data__placeholder  owner-contacts__input owner-contacts__input--phone" type="number"
                 name="phone" placeholder="8 (960) 900-60-90" id="phone" required>
@@ -122,7 +122,7 @@
         </fieldset>
         <fieldset class="user-data__additional-info additional-info">
           <legend class="user-data__legend additional-info__heading">Дополнительно</legend>
-          <ul class="additional-info__list">
+          <ul class="list-reset additional-info__list">
             <li class="additional-info__item">
               <label class="user-data__form-label additional-info__label">
                 <input class="additional-info__input additional-info__input--sugar" type="checkbox" name="sugar"
@@ -183,7 +183,7 @@
           alt="Логотип 'Cat Energy'">
       </a>
       <div class="page-footer__social-wrapper social">
-        <ul class="social__list">
+        <ul class="list-reset social__list">
           <li class="social__item social__item--vk">
             <a class="social__link" href="#" aria-label="Иконка ВКонтакте">
               <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg"
