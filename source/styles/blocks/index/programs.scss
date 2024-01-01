@@ -17,7 +17,7 @@
 
 
 .plan--slim .plan__name::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 36px;
   height: 50px;
@@ -26,7 +26,7 @@
 }
 
 .plan--pro .plan__name::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 67px;
   height: 28px;
@@ -39,7 +39,7 @@
   position: relative;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     width: 32px;
     height: 10px;
