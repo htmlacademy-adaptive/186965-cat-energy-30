@@ -15,9 +15,8 @@
   line-height: 26px;
 }
 
-
 .user-data__placeholder {
-  color: $second-text-color;
+  font-family: inherit;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -25,7 +24,13 @@
   text-transform: uppercase;
 }
 
-.user-data__important {
+
+.user-data__placeholder::placeholder {
+  color: $second-text-color;
+}
+
+
+.user-data__important small {
   font-family: $second-font, $font-serif, $font-serif;
   font-size: 14px;
   line-height: 16px;

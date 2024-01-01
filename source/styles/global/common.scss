@@ -24,13 +24,14 @@ a {
 }
 
 
-ul {
+.list-reset {
   padding: 0;
   list-style: none;
 }
 
 
 .button {
+  font-family: inherit;
   color: $third-text-color;
   font-size: 16px;
   line-height: 20px;

@@ -1,0 +1,23 @@
+.owner-contacts__item {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+  }
+}
+
+.owner-contacts__item--email {
+  &::after {
+    background-image: url("../../images/icons/stack.svg#icon-email");
+  }
+}
+
+.owner-contacts__item--phone {
+  &::after {
+    background-image: url("../../images/icons/stack.svg#icon-phone");
+  }
+}
