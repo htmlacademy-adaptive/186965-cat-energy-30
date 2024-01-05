@@ -26,32 +26,39 @@
             alt="Логотип 'Cat Energy'.">
         </picture>
       </a>
+      <nav class="main-navigation main-navigation--is-closed">
+        <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-navigation__wrapper">
+          <ul class="list-reset main-navigation__list site-list">
+            <li class="site-list__item site-list__item--current">
+              <a class="site-list__link" href="#">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    <nav class="main-navigation main-navigation--is-closed">
-      <button class="main-navigation__toggle" type="button"><span class="visially-hidden">Открыть меню</span></button>
-      <div class="main-navigation__wrapper">
-        <ul class="list-reset main-navigation__list site-list">
-          <li class="site-list__item site-list__item--current">
-            <a class="site-list__link" href="#">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+
   </header>
   <main class="page-main">
     <div class="page-main__cover">
       <section class="show-card">
-        <div class="show-card__title-wrapper">
-          <h1 class="show-card__name">Функциональное
-            питание для котов</h1>
-          <h2 class="show-card__slogan">Занялся собой? Займись котом!</h2>
+        <div class="show-card__container">
+          <div class="show-card__title-wrapper">
+            <h1 class="show-card__name">Функциональное
+              питание для котов</h1>
+            <h2 class="show-card__slogan">Занялся собой? Займись котом!</h2>
+          </div>
+          <div class="show-card__button-wrapper">
+            <a class="button show-card__button-program" href="form.html">подобрать программу</a>
+          </div>
         </div>
+
         <div class="show-card__image-wrapper">
           <picture>
             <!-- desktop webp -->
@@ -80,9 +87,8 @@
               srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Упаковка продукта.">
           </picture>
         </div>
-        <div class="show-card__button-wrapper">
-          <a class="button show-card__button-program" href="form.html">подобрать программу</a>
-        </div>
+
+
       </section>
       <section class="programs">
         <div class="programs__wrapper">
