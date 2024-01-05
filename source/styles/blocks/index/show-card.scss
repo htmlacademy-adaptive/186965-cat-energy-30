@@ -7,7 +7,8 @@
 
 .show-card__container {
   position: relative;
-  padding: 40px 35px 110px 35px;
+  padding-top: 40px;
+  padding-bottom: 80px;
   background-color: $green-background-opacity;
   background-image: url("../../../images/index-background-mobile.jpg");
   background-repeat: no-repeat;
@@ -49,14 +50,14 @@
 
 .show-card__image-wrapper {
   position: relative;
-  bottom: 145px;
+  bottom: 130px;
   z-index: 2;
-  left: -5px;
+  left: 0px;
 }
 
 .show-card__button-wrapper {
   position: relative;
-  top: 280px;
+  top: 260px;
   text-align: center;
 }
 
