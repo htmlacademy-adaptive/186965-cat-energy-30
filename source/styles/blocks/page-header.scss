@@ -1,0 +1,13 @@
+.page-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 21px 14px 20px;
+}
+
+
+@media(min-width: $tablet-width) {
+  .page-header__container {
+    padding: 25px 30px;
+  }
+}

@@ -1,65 +1,58 @@
+.methods {
+  display: grid;
+  row-gap: 20px;
+}
+
 .methods__description {
+  margin: 0;
   color: $second-text-color;
   font-family: $second-font, $font-serif;
   font-size: 14px;
   line-height: 18px;
+
 }
 
 .methods__item {
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
+  display: flex;
+  align-items: center;
 
   &::before {
     content: "";
-    position: absolute;
+    display: block;
+    flex-shrink: 0;
+    margin-right: 20px;
     width: 60px;
     height: 60px;
     background-color: $main-button-background-color;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
 .methods__item--useful-substances {
-  &::after {
-    top: 15px;
-    left: 13px;
-    width: 30px;
-    height: 32px;
+  &::before {
     background-image: url("../../images/icons/stack.svg#icon-leaf");
+    background-size: 30px 32px;
   }
 }
 
 .methods__item--powder {
-  &::after {
-    top: 15px;
-    left: 13px;
-    width: 26px;
-    height: 29px;
+  &::before {
     background-image: url("../../images/icons/stack.svg#icon-powder");
+    background-size: 26px 29px;
   }
 }
 
 .methods__item--food {
-  &::after {
-    top: 15px;
-    left: 13px;
-    width: 30px;
-    height: 32px;
+  &::before {
     background-image: url("../../images/icons/stack.svg#icon-eat");
+    background-size: 30px 32px;
   }
 }
 
 .methods__item--useful-time {
-  &::after {
-    top: 15px;
-    left: 13px;
-    width: 30px;
-    height: 32px;
+  &::before {
     background-image: url("../../images/icons/stack.svg#icon-time");
+    background-size: 30px 32px;
   }
 }

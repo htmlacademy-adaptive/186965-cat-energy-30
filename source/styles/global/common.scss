@@ -1,6 +1,7 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
 body {
   margin: 0;
+  min-width: 320px;
   font-family: $primary-font, $reserved-font, $font-serif;
   font-weight: 400;
   color: $main-text-color;
@@ -25,6 +26,7 @@ a {
 
 
 .list-reset {
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -38,4 +40,12 @@ a {
   text-transform: uppercase;
   background-color: $main-button-background-color;
   border: none;
+}
+
+
+@media(min-width: $tablet-width) {
+  .button {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
