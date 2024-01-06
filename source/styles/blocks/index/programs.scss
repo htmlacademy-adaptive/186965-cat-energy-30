@@ -17,4 +17,12 @@
 }
 
 
+@media(min-width: $tablet-width) {
+  .programs__wrapper {
+    row-gap: 30px;
+  }
 
+  .programs__inner {
+    padding: 77px 62px 57px 52px;
+  }
+}

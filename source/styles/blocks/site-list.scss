@@ -1,6 +1,22 @@
+.site-list {
+  display: flex;
+  column-gap: 33px;
+  flex-wrap: wrap;
+}
+
+.site-list__item--current {
+  padding-bottom: 10px;
+  border-bottom: 2px solid $main-button-background-color;
+
+}
+
 .site-list__link {
   color: $main-text-color;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
 }
+
+
+
+

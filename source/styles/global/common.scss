@@ -41,3 +41,11 @@ a {
   background-color: $main-button-background-color;
   border: none;
 }
+
+
+@media(min-width: $tablet-width) {
+  .button {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}

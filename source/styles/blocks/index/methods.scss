@@ -9,67 +9,50 @@
   font-family: $second-font, $font-serif;
   font-size: 14px;
   line-height: 18px;
+
 }
 
 .methods__item {
   display: flex;
   align-items: center;
-  position: relative;
-  padding-left: 80px;
-
-  &::after {
-    content: "";
-    position: absolute;
-    background-repeat: no-repeat;
-    z-index: 1;
-  }
 
   &::before {
     content: "";
-    position: absolute;
-    left: 0;
+    display: block;
+    flex-shrink: 0;
+    margin-right: 20px;
     width: 60px;
     height: 60px;
     background-color: $main-button-background-color;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
 .methods__item--useful-substances {
-  &::after {
-    top: 15px;
-    left: 13px;
-    width: 30px;
-    height: 32px;
+  &::before {
     background-image: url("../../images/icons/stack.svg#icon-leaf");
+    background-size: 30px 32px;
   }
 }
 
 .methods__item--powder {
-  &::after {
-    top: 15px;
-    left: 13px;
-    width: 26px;
-    height: 29px;
+  &::before {
     background-image: url("../../images/icons/stack.svg#icon-powder");
+    background-size: 26px 29px;
   }
 }
 
 .methods__item--food {
-  &::after {
-    top: 15px;
-    left: 13px;
-    width: 30px;
-    height: 32px;
+  &::before {
     background-image: url("../../images/icons/stack.svg#icon-eat");
+    background-size: 30px 32px;
   }
 }
 
 .methods__item--useful-time {
-  &::after {
-    top: 15px;
-    left: 13px;
-    width: 30px;
-    height: 32px;
+  &::before {
     background-image: url("../../images/icons/stack.svg#icon-time");
+    background-size: 30px 32px;
   }
 }

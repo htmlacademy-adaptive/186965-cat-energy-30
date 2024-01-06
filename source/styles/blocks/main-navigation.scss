@@ -1,7 +1,5 @@
-.main-navigation {
-  position: relative;
-  width: 40px;
-  height: 30px;
+.main-navigation__toggle {
+  display: none;
 }
 
 
@@ -11,6 +9,12 @@
 
 
 @media(max-width: $mobile-width-only) {
+  .main-navigation {
+    position: relative;
+    width: 40px;
+    height: 30px;
+  }
+
   .main-navigation__toggle {
     position: absolute;
     top: 0;
@@ -36,4 +40,10 @@
     box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
     background-color: #222222;
 }
+
+.main-navigation__toggle {
+  display: block;
 }
+
+}
+

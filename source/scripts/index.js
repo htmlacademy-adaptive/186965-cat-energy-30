@@ -7,7 +7,7 @@
   const before = slider.querySelector('.slider__image--before');
   const after = slider.querySelector('.slider__image--after');
   let scaleWidth;
-  let halfGripWidth;
+  // let halfGripWidth;
   let gripWidth;
   let sliderWidth;
 
@@ -70,7 +70,7 @@
   };
 
 
-  const initialize = function() {
+  const initialize = function () {
     const viewport = document.documentElement.clientWidth || window.innerWidth;
 
     if (viewport >= TABLET_WIDTH) {
@@ -82,7 +82,7 @@
     sliderWidth = getElemWidth(slider);
     scaleWidth = getElemWidth(scale);
     gripWidth = getElemWidth(grip);
-    halfGripWidth = sliderWidth / gripWidth / 2;
+    // halfGripWidth = sliderWidth / gripWidth / 2;
 
     before.style.width = '';
     after.style.width = '';

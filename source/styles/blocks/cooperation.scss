@@ -1,4 +1,13 @@
+.cooperation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+  padding: 26px 20px;
+}
+
 .cooperation__welcome-words {
+  margin: 0;
   color: #111111;
   font-size: 16px;
   font-style: normal;
@@ -7,10 +16,21 @@
 }
 
 .cooperation__address {
+  margin: 0;
   color: $second-text-color;
   font-family: $second-font, $font-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+}
+
+@media(min-width: 510px) {
+  .cooperation__welcome-words {
+    width: 50%;
+  }
+
+  .cooperation__address {
+    width: 50%;
+  }
 }

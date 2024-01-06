@@ -6,8 +6,12 @@
 @import "./global/common.scss";
 
 /* BLOCKS */
+@import "./blocks/page-header.scss";
+@import "./blocks/main-navigation.scss";
 @import "./blocks/site-list.scss";
 @import "./blocks/cooperation.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/social.scss";
 
 //index.html
 @import "./blocks/index/show-card.scss";
@@ -19,9 +23,8 @@
 @import "./blocks/index/weight.scss";
 @import "./blocks/index/days.scss";
 @import "./blocks/index/expenses.scss";
-@import "./blocks/index/page-header.scss";
 @import "./blocks/index/page-main.scss";
-@import "./blocks/index/main-navigation.scss";
+
 @import "./blocks/index/slider.scss";
 
 // form.html
