@@ -17,11 +17,32 @@
   margin-top: 0px;
   width: 90px;
   padding-left: 15px;
-  padding-right: 18px;
+  padding-right: 15px;
   background-color: #eaeaea;
   color: $second-text-color;
   font-family: $second-font, $font-serif;
   font-size: 12px;
   line-height: 100%;
   text-align: center;
+}
+
+
+@media(min-width: $tablet-width) {
+  .weight {
+    padding: 15px 56px 18px 56px;
+  }
+
+  .weight__loss {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .weight__caption {
+    top: 62px;
+    left: 15px;
+    width: 81%;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+  }
 }

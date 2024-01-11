@@ -20,3 +20,22 @@
   padding-bottom: 20px;
   border-bottom: 1px solid #D9D9D9;
 }
+
+
+@media(min-width: $tablet-width) {
+  .page-footer__inner {
+    flex-direction: row;
+    padding: 60px 30px;
+  }
+
+  .page-footer__logo-wrapper {
+    padding: 0;
+    border-bottom: none;
+    text-align: left;
+  }
+
+  .page-footer__social-wrapper {
+    padding: 0;
+    border-bottom: none;
+  }
+}

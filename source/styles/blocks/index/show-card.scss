@@ -1,19 +1,12 @@
 .show-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
+  padding-top: 40px;
+  margin-bottom: 20px;
 }
 
 .show-card__container {
-  width: 100%;
   position: relative;
-  padding-top: 40px;
-  padding-bottom: 80px;
   text-align: center;
-  z-index: 1;
 }
-
 
 .show-card__name {
   margin: 0;
@@ -27,7 +20,6 @@
 }
 
 
-
 .show-card__slogan {
   margin: 0;
   margin-bottom: 29px;
@@ -39,44 +31,17 @@
 }
 
 
-.show-card__image-wrapper {
-  position: relative;
-  bottom: 130px;
-  z-index: 2;
-  left: 0px;
-}
-
 .show-card__button-wrapper {
   position: relative;
-  top: 260px;
-  text-align: center;
 }
 
 .show-card__button-program {
   display: inline-block;
-  width: 280px;
+  width: 100%;
   padding: 10px 44px;
 }
 
 @media(max-width: $mobile-width-only) {
-  .show-card__container {
-    background-color: $green-background-opacity;
-    background-image: url("../../../images/index-background-mobile.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: $green-background-opacity;
-      z-index: -1;
-    }
-  }
-
   .show-card__name  br {
     display: none;
   }
@@ -84,24 +49,13 @@
 }
 
 
-@media(min-width: 509px) and (max-width: $mobile-width-only) {
-  .show-card__container {
-    background-image: url('../../images/index-background-desktop.jpg');
-    background-position: center;
-  }
-}
-
-
 @media(min-width: $tablet-width) {
-
-  .show-card {
-    padding-left: 90px;
-  }
-
 
   .show-card__container {
     padding: 0;
+    padding-left: 90px;
     text-align: left;
+    min-height: 810px;
   }
 
   .show-card__name {
@@ -113,6 +67,7 @@
   }
 
   .show-card__slogan {
+    margin-bottom: 50px;
     color: $main-text-color;
     font-size: 20px;
     line-height: 20px;
@@ -124,10 +79,12 @@
     left: -45px;
   }
 
-  .show-card__button-wrapper {
-    top: 20px;
-    text-align: left;
+  .show-card__picture {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
   }
+
 
   .show-card__button-program {
     width: 244px;

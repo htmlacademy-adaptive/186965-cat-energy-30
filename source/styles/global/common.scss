@@ -42,6 +42,13 @@ a {
   border: none;
 }
 
+.page-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  // padding-left: 110px;
+  // padding-right: 110px;
+}
+
 
 @media(min-width: $tablet-width) {
   .button {

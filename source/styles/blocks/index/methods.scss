@@ -1,6 +1,6 @@
 .methods {
   display: grid;
-  row-gap: 20px;
+ row-gap: 20px;
 }
 
 .methods__description {
@@ -14,7 +14,6 @@
 
 .methods__item {
   display: flex;
-  align-items: center;
 
   &::before {
     content: "";
@@ -55,4 +54,45 @@
     background-image: url("../../images/icons/stack.svg#icon-time");
     background-size: 30px 32px;
   }
+}
+
+
+@media(min-width: $tablet-width) {
+  .methods {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    row-gap: 135px;
+    column-gap: 154px;
+    counter-reset: method;
+  }
+
+  .methods__item {
+    position: relative;
+    flex-direction: column;
+    row-gap: 31px;
+    max-width: 250px;
+
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      counter-increment: method;
+      content: counter(method) "";
+      position: absolute;
+      z-index: -1;
+      top: -106px;
+      right: 0;
+      font-size: 280px;
+      color: #f2f2f2;
+    }
+  }
+
+  .methods__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+
 }

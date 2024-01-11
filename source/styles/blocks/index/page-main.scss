@@ -1,7 +1,13 @@
-.page-main__wrapper {
-  margin-top: -75px;
+// .page-main__wrapper {
+//   margin-top: -75px;
+//   padding-left: 20px;
+//   padding-right: 20px;
+// }
+
+.page-main__cover {
+  // background-color: $green-background-opacity;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 20px
 }
 
 
@@ -9,6 +15,9 @@
   .page-main__cover {
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 47px;
+    margin-bottom: 45px;
+    border-bottom: 1px solid #E6E6E6;
   }
 
   .page-main__wrapper {

@@ -8,3 +8,25 @@
   line-height: 20px;
   text-transform: uppercase;
 }
+
+.expenses__text br {
+  display: none;
+}
+
+
+@media(min-width: $tablet-width) {
+  .expenses__text {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: right;
+  }
+
+  .expenses__text br {
+    display: block;
+  }
+
+  .expenses {
+    margin: 0;
+    flex-shrink: 0;
+  }
+}

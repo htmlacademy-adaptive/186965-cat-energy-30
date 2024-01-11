@@ -45,3 +45,45 @@
     margin-right: auto;
   }
 }
+
+@media(min-width: $tablet-width) {
+  .client {
+    background-color: transparent;
+  }
+
+  .client__wrapper {
+    padding: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+
+  }
+
+  .client__header {
+    margin-bottom: 60px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .client__story {
+    margin-bottom: 65px  ;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .client__inner {
+    display: flex;
+    align-items: center;
+  }
+
+  .client__weight-wrapper {
+    margin: 0;
+    justify-content: flex-start;
+    column-gap: 43px;
+  }
+
+  .client__data {
+    margin-bottom: 99px;
+  }
+
+
+}

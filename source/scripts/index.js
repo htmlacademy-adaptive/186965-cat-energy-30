@@ -1,15 +1,14 @@
 (function () {
   const TABLET_WIDTH = 768;
-  // const DESKTOP_WIDTH = 1300;
+  const DESKTOP_WIDTH = 1300;
   const slider = document.querySelector('.slider');
   const scale = slider.querySelector('.slider__scale');
   const grip = scale.querySelector('.slider__grip');
   const before = slider.querySelector('.slider__image--before');
   const after = slider.querySelector('.slider__image--after');
   let scaleWidth;
-  // let halfGripWidth;
+  // halfGripWidth,
   let gripWidth;
-  let sliderWidth;
 
   const getElemWidth = function (elem) {
     return parseInt(getComputedStyle(elem).width, 10);
@@ -18,7 +17,6 @@
 
   const getCoords = function (elem) {
     const box = elem.getBoundingClientRect();
-
     return box.left + pageXOffset;
   };
 
@@ -26,9 +24,7 @@
     const gripCoords = getCoords(grip);
     const scaleCoords = getCoords(scale);
     grip.classList.add('is_active');
-    // grip.style.transition = 'none';
 
-    // console.log(gripCoords, scaleCoords)
 
     const shiftX = evtDown.pageX - gripCoords;
 
@@ -44,11 +40,12 @@
         newLeft = rightEdge;
       }
 
-      const gripValue = newLeft / rightEdge * 100;
+      const gripValue = newLeft / rightEdge * 120;
       grip.style.marginLeft = `${newLeft}px`;
 
-      before.style.width = `(${gripValue})%`;
+      before.style.width = `${gripValue}%`;
       after.style.width = `(100 - ${gripValue})%`;
+
 
     };
 
@@ -70,7 +67,7 @@
   };
 
 
-  const initialize = function () {
+  const initialize = function() {
     const viewport = document.documentElement.clientWidth || window.innerWidth;
 
     if (viewport >= TABLET_WIDTH) {
@@ -79,7 +76,7 @@
       removeGripHandlers();
     }
 
-    sliderWidth = getElemWidth(slider);
+    // sliderWidth = getElemWidth(slider);
     scaleWidth = getElemWidth(scale);
     gripWidth = getElemWidth(grip);
     // halfGripWidth = sliderWidth / gripWidth / 2;

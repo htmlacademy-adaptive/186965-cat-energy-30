@@ -22,15 +22,6 @@
   line-height: 37px;
   text-transform: uppercase;
 
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 50px;
-    height: 50px;
-    background-color: $main-button-background-color;
-    border-radius: 50%;
-  }
 
   &::before {
     content: "";
@@ -43,10 +34,10 @@
 
 .plan--slim .plan__name {
   &::before {
-    width: 36px;
-    height: 50px;
+    width: 50px;
+    height: 53px;
     background-image: url("../../images/icons/stack.svg#icon-cat-slim");
-    left: 8px;
+    left: 5px;
     top: -8px;
   }
 }
@@ -55,10 +46,10 @@
 .plan--pro .plan__name {
   &::before {
     width: 67px;
-    height: 28px;
+    height: 50px;
     background-image: url("../../images/icons/stack.svg#icon-cat-pro");
     left: -8px;
-    top: 5px;
+    top: -5px;
   }
 }
 
@@ -112,26 +103,33 @@
 
   .plan--slim .plan__name{
     &::before {
-      width: 140px;
-      height: 194px;
-      left: 425px;
+      width: 200px;
+      height: 211px;
+      top: 0;
+      left: 400px;
     }
   }
 
   .plan--pro .plan__name {
     &::before {
       width: 268px;
-      height: 112px;
-      left: 367px;
-      top: 50px;
+      height: 200px;
+      left: 364px;
+      top: 30px;
     }
   }
 
   .plan__description {
-    padding-right: 300px;
+    margin-bottom: 52px;
+    padding-right: 255px;
     font-size: 16px;
     line-height: 24px;
   }
 
+  .plan__link {
+    padding-right: 25px;
+    font-size: 20px;
+    line-height: normal;
+  }
 
 }
