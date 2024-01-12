@@ -30,22 +30,22 @@
               alt="Логотип 'Cat Energy'.">
           </picture>
         </a>
-        <nav class="main-navigation main-navigation--is-closed">
-          <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть
-              меню</span></button>
-          <div class="main-navigation__wrapper">
-            <ul class="list-reset main-navigation__list site-list">
-              <li class="site-list__item site-list__item--current">
-                <a class="site-list__link" href="#">Главная</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-              </li>
-              <li class="site-list__item">
-                <a class="site-list__link" href="form.html">Подбор программы</a>
-              </li>
-            </ul>
-          </div>
+        <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть
+            меню</span></button>
+        <nav class="main-navigation">
+
+          <ul class="list-reset main-navigation__list site-list">
+            <li class="site-list__item site-list__item--current">
+              <a class="site-list__link" href="#">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+
         </nav>
       </div>
 
@@ -332,7 +332,8 @@
     </footer>
   </div>
 
-  <script src="scripts/map.js" defer></script>
+  <script src="scripts/map.js" type="module"></script>
+  <script src="scripts/mobile.menu.js" type="module"></script>
 </body>
 
 </html>
