@@ -27,6 +27,10 @@
   max-width: 163px;
 }
 
+.cooperation--form {
+  background-color: $basic-grey;
+}
+
 
 
 @media(min-width: $tablet-width) {
@@ -48,5 +52,20 @@
   .cooperation__address span {
     display: block;
     margin-bottom: 15px;
+  }
+}
+
+
+@media(min-width: $desktop-width) {
+  .cooperation {
+    position: absolute;
+    left: 50px;
+    top: 80px;
+    z-index: 1;
+    background-color: $third-text-color;
+  }
+
+  .cooperation__address {
+    text-align: left ;
   }
 }

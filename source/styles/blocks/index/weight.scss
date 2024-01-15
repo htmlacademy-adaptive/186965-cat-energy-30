@@ -14,7 +14,7 @@
   position: absolute;
   top: 48px;
   left: 19px;
-  margin-top: 0px;
+  margin: 0px;
   width: 90px;
   padding-left: 15px;
   padding-right: 15px;
@@ -45,4 +45,13 @@
     line-height: 14px;
     background-color: #ffffff;
   }
+}
+
+
+@media(min-width: $desktop-width) {
+
+  .weight__caption {
+    background-color: #F2F2F2;
+  }
+
 }

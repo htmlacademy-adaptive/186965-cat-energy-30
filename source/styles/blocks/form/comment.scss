@@ -1,0 +1,25 @@
+.comment {
+  margin-bottom: 23px;
+}
+
+.comment__text {
+  padding: 14px;
+  width: 100%;
+  min-height: 150px;
+  resize: none;
+}
+
+
+@media(min-width: $tablet-width) {
+  .comment {
+    margin-bottom: 65px;
+  }
+
+  .comment__heading {
+    margin-bottom: 87px;
+  }
+
+  .comment__text {
+    min-height: 175px;
+  }
+}

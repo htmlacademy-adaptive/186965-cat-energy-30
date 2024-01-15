@@ -1,9 +1,8 @@
-.show-card {
-  padding-top: 40px;
-  margin-bottom: 20px;
-}
+
 
 .show-card__container {
+  padding-top: 40px;
+  margin-bottom: 20px;
   position: relative;
   text-align: center;
 }
@@ -90,4 +89,22 @@
     width: 244px;
     padding: 14px 26px;
   }
+}
+
+
+@media(min-width: $desktop-width) {
+
+  .show-card__container {
+    padding-top: 110px;
+    margin-bottom: 82px;
+    min-height: 560px;
+    padding-left: 80px;
+  }
+
+
+  .show-card__picture {
+    top: 20px;
+    left: 36.7%;
+  }
+
 }

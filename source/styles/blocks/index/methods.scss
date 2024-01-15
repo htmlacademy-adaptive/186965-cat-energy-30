@@ -93,6 +93,11 @@
     font-size: 16px;
     line-height: 24px;
   }
+}
 
-
+@media(min-width: $desktop-width) {
+  .methods {
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    column-gap: 94px;
+  }
 }

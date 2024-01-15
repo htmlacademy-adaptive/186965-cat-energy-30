@@ -1,16 +1,17 @@
 .expenses {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .expenses__text {
-  margin: 0;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
 }
 
-.expenses__text br {
-  display: none;
+.expenses__amount {
+  font-size: 14px;
+  line-height: 20px;
 }
 
 
@@ -18,15 +19,22 @@
   .expenses__text {
     font-size: 20px;
     line-height: 25px;
-    text-align: right;
   }
 
-  .expenses__text br {
-    display: block;
+  .expenses__amount {
+    font-size: 20px;
+    line-height: 25px;
   }
 
   .expenses {
     margin: 0;
-    flex-shrink: 0;
+  }
+}
+
+
+@media(min-width: $desktop-width) {
+  .expenses {
+    display: flex;
+    column-gap: 63px;
   }
 }

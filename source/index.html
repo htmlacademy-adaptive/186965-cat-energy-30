@@ -17,39 +17,40 @@
 </head>
 
 <body>
-  <div class="page-wrapper">
-    <header class="page-header page-header--index">
-      <div class="page-header__container">
-        <a class="page-header__logo" href="#">
-          <picture>
-            <source srcset="images/logo-desktop.svg" media="(min-width: 1440px)" width="202" height="59"
-              type="image/svg+xml">
-            <source srcset="images/logo-tablet.svg" media="(min-width: 768px)" width="174" height="50"
-              type="image/svg+xml">
-            <img class="page-header__logo" src="images/logo-mobile.svg" width="190" height="38"
-              alt="Логотип 'Cat Energy'.">
-          </picture>
-        </a>
-        <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть
-            меню</span></button>
-        <nav class="main-navigation">
 
-          <ul class="list-reset main-navigation__list site-list">
-            <li class="site-list__item site-list__item--current">
-              <a class="site-list__link" href="#">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
+  <header class="page-header page-header--index">
+    <div class="page-header__container container">
+      <a class="page-header__logo" href="#">
+        <picture>
+          <source srcset="images/logo-desktop.svg" media="(min-width: 1220px)" width="202" height="59"
+            type="image/svg+xml">
+          <source srcset="images/logo-tablet.svg" media="(min-width: 768px)" width="174" height="50"
+            type="image/svg+xml">
+          <img class="page-header__logo" src="images/logo-mobile.svg" width="190" height="38"
+            alt="Логотип 'Cat Energy'.">
+        </picture>
+      </a>
+      <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть
+          меню</span></button>
+      <nav class="main-navigation">
 
-        </nav>
-      </div>
+        <ul class="list-reset main-navigation__list site-list">
+          <li class="site-list__item site-list__item--current">
+            <a class="site-list__link" href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Подбор программы</a>
+          </li>
+        </ul>
 
-    </header>
+      </nav>
+    </div>
+
+  </header>
+  <div class="container">
     <main class="page-main">
       <div class="page-main__cover">
         <section class="show-card">
@@ -61,7 +62,7 @@
 
             <picture>
               <!-- desktop webp -->
-              <source type="img/webp" media="(min-width: 1440px)"
+              <source type="img/webp" media="(min-width: 1220px)"
                 srcset="images/index-can-desktop@1x.webp 1x, images/index-can-desktop@2x.webp 2x" width="552"
                 height="499">
 
@@ -71,11 +72,11 @@
                 height="609">
 
               <!-- mobile webp -->
-              <source type="img/webp" srcset="images/index-can-tablet@1x.webp 1x, images/index-can-tablet@2x.webp 2x"
+              <source type="img/webp" srcset="images/index-can-mobile@1x.webp 1x, images/index-can-mobile@2x.webp 2x"
                 width="280" height="270">
 
               <!-- desktop -->
-              <source type="image/png" media="(min-width: 1440px)"
+              <source type="image/png" media="(min-width: 1220px)"
                 srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x" width="552"
                 height="499">
 
@@ -150,112 +151,120 @@
         </section>
 
       </div>
-      <section class="client">
-        <div class="client__wrapper">
-          <div class="client__data">
-            <h2 class="client__header">Живой пример</h2>
-            <p class="client__story">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-              Slim.
-              Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
-              часов в день.</p>
-            <div class="client__inner">
-              <div class="client__weight-wrapper">
-                <div class="client__box weight">
-                  <span class="weight__loss">5 КГ</span>
-                  <p class="weight__caption">снижение веса</p>
-                </div>
-                <div class="client__box days">
-                  <span class="days__loss">60 ДНЕЙ</span>
-                  <p class="days__caption">затрачено времени</p>
-                </div>
+  </div>
+  <section class="client">
+    <div class="client__header-wrap">
+      <h2 class="client__header">Живой пример</h2>
+    </div>
+    <div class="client__wrapper">
+
+      <div class="client__wrap">
+        <div class="client__data">
+          <p class="client__story">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+            Slim.
+            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
+            часов в день.</p>
+          <div class="client__inner">
+            <div class="client__weight-wrapper">
+              <div class="client__box weight">
+                <span class="weight__loss">5 КГ</span>
+                <p class="weight__caption">снижение веса</p>
               </div>
-              <div class="client__money expenses">
-                <p class="expenses__text">Затраты на питание: <br> 15 000 РУБ.</p>
+              <div class="client__box days">
+                <span class="days__loss">60 ДНЕЙ</span>
+                <p class="days__caption">затрачено времени</p>
+              </div>
+            </div>
+            <div class="client__money expenses">
+              <span class="expenses__text">Затраты на питание:</span>
+              <span class="expenses__amount">15 000 РУБ.</span>
+            </div>
+          </div>
+        </div>
+        <div class="client__output result slider">
+          <div class="result__list slider__container">
+            <div class="slider__images">
+              <div class="result__item slider__image slider__image--before">
+                <picture>
+                  <!-- desktop webp -->
+                  <source type="img/webp" media="(min-width: 1220px)"
+                    srcset="images/cat-before-desktop@1x.webp 1x, images/cat-before-desktop@2x.webp 2x" width="552"
+                    height="499">
+
+                  <!-- tablet webp -->
+                  <source type="img/webp" media="(min-width: 768px)"
+                    srcset="images/cat-before-tablet@1x.webp 1x, images/cat-before-tablet@2x.webp 2x" width="709"
+                    height="609">
+
+                  <!-- mobile webp -->
+                  <source type="img/webp"
+                    srcset="images/cat-before-tablet@1x.webp 1x, images/cat-before-tablet@2x.webp 2x" width="280"
+                    height="270">
+
+                  <!-- desktop -->
+                  <source type="image/png" media="(min-width: 1220px)"
+                    srcset="images/cat-before-desktop@1x.png 1x, images/cat-before-desktop@2x.png 2x" width="552"
+                    height="499">
+
+                  <!-- tablet -->
+                  <source type="image/png" media="(min-width: 768px)"
+                    srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="709"
+                    height="609">
+
+                  <img class="result__image result__image--before" src="images/cat-before-mobile@1x.png"
+                    srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Изображение кота до.">
+                </picture>
+              </div>
+              <div class="result__item slider__image slider__image--after">
+                <picture>
+                  <!-- desktop webp -->
+                  <source type="img/webp" media="(min-width: 1220px)"
+                    srcset="images/cat-after-desktop@1x.webp 1x, images/cat-after-desktop@2x.webp 2x" width="552"
+                    height="499">
+
+                  <!-- tablet webp -->
+                  <source type="img/webp" media="(min-width: 768px)"
+                    srcset="images/cat-after-tablet@1x.webp 1x, images/cat-after-tablet@2x.webp 2x" width="709"
+                    height="609">
+
+                  <!-- mobile webp -->
+                  <source type="img/webp"
+                    srcset="images/cat-after-tablet@1x.webp 1x, images/cat-after-tablet@2x.webp 2x" width="280"
+                    height="270">
+                  <!-- desktop -->
+                  <source type="image/png" media="(min-width: 1220px)"
+                    srcset="images/cat-after-desktop@1x.png 1x, images/cat-after-desktop@2x.png 2x" width="552"
+                    height="499">
+
+                  <!-- tablet -->
+                  <source type="image/png" media="(min-width: 768px)"
+                    srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" width="709"
+                    height="609">
+
+                  <img class="result__image result__image--after" src="images/cat-after-mobile@1x.png"
+                    srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Изображение кота после.">
+                </picture>
+              </div>
+            </div>
+            <div class="result__toggle slider__scale">
+              <div class="slider__grip" style="margin-left: 0px;">
+                <div class="slider__line"></div>
+                <svg class="slider__svg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="1" y="1" width="38" height="38" rx="19" fill="white" />
+                  <rect x="1" y="1" width="38" height="38" rx="19" stroke="currentColor" stroke-width="2" />
+                  <path d="M16 11L8 20L16 29V11Z" fill="currentColor" />
+                  <path d="M32 20L24 11V29L32 20Z" fill="currentColor" />
+                </svg>
               </div>
             </div>
           </div>
-          <div class="client__output result slider">
-            <div class="result__list slider__list">
-              <div class="slider__images">
-                <div class="result__item slider__image slider__image--before">
-                  <picture>
-                    <!-- desktop webp -->
-                    <source type="img/webp" media="(min-width: 1440px)"
-                      srcset="images/cat-before-desktop@1x.webp 1x, images/cat-before-desktop@2x.webp 2x" width="552"
-                      height="499">
-
-                    <!-- tablet webp -->
-                    <source type="img/webp" media="(min-width: 768px)"
-                      srcset="images/cat-before-tablet@1x.webp 1x, images/cat-before-tablet@2x.webp 2x" width="709"
-                      height="609">
-
-                    <!-- mobile webp -->
-                    <source type="img/webp"
-                      srcset="images/cat-before-tablet@1x.webp 1x, images/cat-before-tablet@2x.webp 2x" width="280"
-                      height="270">
-
-                    <!-- desktop -->
-                    <source type="image/png" media="(min-width: 1440px)"
-                      srcset="images/cat-before-desktop@1x.png 1x, images/cat-before-desktop@2x.png 2x" width="552"
-                      height="499">
-
-                    <!-- tablet -->
-                    <source type="image/png" media="(min-width: 768px)"
-                      srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="709"
-                      height="609">
-
-                    <img class="result__image result__image--before" src="images/cat-before-mobile@1x.png"
-                      srcset="images/cat-before-mobile@2x.png 2x" width="280" height="256" alt="Изображение кота до.">
-                  </picture>
-                </div>
-                <div class="result__item slider__image slider__image--after">
-                  <picture>
-                    <!-- desktop webp -->
-                    <source type="img/webp" media="(min-width: 1440px)"
-                      srcset="images/cat-after-desktop@1x.webp 1x, images/cat-after-desktop@2x.webp 2x" width="552"
-                      height="499">
-
-                    <!-- tablet webp -->
-                    <source type="img/webp" media="(min-width: 768px)"
-                      srcset="images/cat-after-tablet@1x.webp 1x, images/cat-after-tablet@2x.webp 2x" width="709"
-                      height="609">
-
-                    <!-- mobile webp -->
-                    <source type="img/webp"
-                      srcset="images/cat-after-tablet@1x.webp 1x, images/cat-after-tablet@2x.webp 2x" width="280"
-                      height="270">
-                    <!-- desktop -->
-                    <source type="image/png" media="(min-width: 1440px)"
-                      srcset="images/cat-after-desktop@1x.png 1x, images/cat-after-desktop@2x.png 2x" width="552"
-                      height="499">
-
-                    <!-- tablet -->
-                    <source type="image/png" media="(min-width: 768px)"
-                      srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" width="709"
-                      height="609">
-
-                    <img class="result__image result__image--after" src="images/cat-after-mobile@1x.png"
-                      srcset="images/cat-after-mobile@2x.png 2x" width="280" height="256" alt="Изображение кота после.">
-                  </picture>
-                </div>
-              </div>
-              <div class="result__toggle slider__scale">
-                <div class="slider__grip" style="margin-left: 0px;">
-                  <div class="slider__line"></div>
-                  <svg class="slider__svg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="1" y="1" width="38" height="38" rx="19" fill="white" />
-                    <rect x="1" y="1" width="38" height="38" rx="19" stroke="currentColor" stroke-width="2" />
-                    <path d="M16 11L8 20L16 29V11Z" fill="currentColor" />
-                    <path d="M32 20L24 11V29L32 20Z" fill="currentColor" />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-      </section>
-    </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
+        </div>
+      </div>
+  </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="container">
         <address class="page-footer__contacts cooperation">
           <p class="cooperation__welcome-words">приглашаем к сотрудничеству дилеров!</p>
           <p class="cooperation__address">
@@ -266,10 +275,12 @@
             Санкт-Петербург
           </p>
         </address>
-        <div class="page-footer__map-wrapper">
-          <div id="map" style="width:100%; height:300px"></div>
-        </div>
-        <div class="page-footer__inner">
+      </div>
+      <div class="page-footer__map-wrapper">
+        <div id="map" style="width:100%; height:400px"></div>
+      </div>
+      <div class="page-footer__inner">
+        <div class="container page-footer__inner-wrap">
           <a class="page-footer__logo-wrapper logo" href="index.html">
             <img class="page-footer__logo logo__image" src="images/logo-footer.svg" width="128" height="24"
               alt="Логотип 'Cat Energy'.">
@@ -329,8 +340,8 @@
           </div>
         </div>
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 
   <script src="scripts/map.js" type="module"></script>
   <script src="scripts/mobile.menu.js" type="module"></script>

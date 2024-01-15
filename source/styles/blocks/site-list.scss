@@ -50,6 +50,17 @@
       background-color: $main-button-background-color;
     }
   }
+}
 
 
+@media(min-width: $desktop-width) {
+  .site-list__link {
+    color: #ffffff;
+  }
+
+  .site-list__item--current {
+    &::after {
+      background-color: #ffffff;
+    }
+  }
 }

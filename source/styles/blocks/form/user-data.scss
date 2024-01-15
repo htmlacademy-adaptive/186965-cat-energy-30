@@ -1,4 +1,5 @@
 .user-data__form-label {
+  flex-shrink: 0;
   color: $second-text-color;
   font-size: 16px;
   font-style: normal;
@@ -9,29 +10,119 @@
 
 
 .user-data__legend {
+  position: relative;
+  padding: 0;
+  margin-bottom: 35px;
+  margin-left: -40px;
+  padding-left: 40px;
+  padding-right: 20px;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
+  background-color: #ffffff;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    z-index: -1;
+    width: 100vw;
+    height: 3px;
+    background-color: $main-button-background-color;
+  }
+}
+
+.user-data__legend--title-line  {
+  &::after {
+    top: 30%;
+  }
 }
 
 .user-data__placeholder {
+  border: 1px solid #E7E7E7;
   font-family: inherit;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+
+  &::placeholder {
+    color: $second-text-color;
+  }
 }
-
-
-.user-data__placeholder::placeholder {
-  color: $second-text-color;
-}
-
 
 .user-data__important small {
   font-family: $second-font, $font-serif, $font-serif;
   font-size: 14px;
   line-height: 16px;
+}
+
+
+.user-data__submit-button {
+  width: 100%;
+  padding: 10px 44px;
+  margin-bottom: 21px;
+}
+
+.user-data__important {
+  margin: 0;
+  text-align: center;
+}
+
+
+@media(min-width: $tablet-width) {
+  .user-data__form-label {
+    font-size: 20px;
+    line-height: normal;
+  }
+
+  .user-data__placeholder {
+    min-height: 52px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: normal;
+    }
+  }
+
+  .user-data__legend {
+    margin-bottom: 76px;
+    padding-right: 40px;
+    padding-left: 40px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::after {
+      left: -30px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      z-index: -1;
+      width: 100vw;
+      height: 3px;
+      background-color: $main-button-background-color;
+    }
+  }
+
+  .user-data__legend--title-line {
+    &::after {
+      top: 50%;
+    }
+  }
+
+  .user-data__submit-button-wrapper {
+    display: flex;
+    column-gap: 60px;
+  }
+
+  .user-data__submit-button {
+    width: 284px;
+  }
 }

@@ -1,0 +1,44 @@
+
+.personal-info {
+  margin-bottom: 46px;
+}
+
+.personal-info__item {
+  display: flex;
+  column-gap: 13px;
+  align-items: center;
+
+
+
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+
+.personal-info__input {
+  width: 100%;
+  padding: 12px 15px 11px 15px;
+}
+
+.personal-info__input--name {
+  min-width: 228px;
+
+}
+
+.personal-info__input--weight {
+  min-width: 207px;
+
+}
+
+.personal-info__input--age {
+  min-width: 173px;
+  padding: 12px 15px 11px 15px;
+}
+
+@media(min-width: $tablet-width) {
+  .personal-info__input {
+    padding: 11px 11px 11px 20px;
+  }
+}
+
+

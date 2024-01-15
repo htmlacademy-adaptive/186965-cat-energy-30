@@ -4,14 +4,13 @@
     display: none;
   }
 
-
   .main-navigation--is-opened {
     display: block;
     width: 100%;
     z-index: 1000;
     position: absolute;
     background: #fff;
-    top: 70px;
+    top: 60px;
     left: 0;
   }
 
@@ -35,9 +34,10 @@
     height: 2px;
     box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
     background-color: #000000;
+    transition: 0.4s;
 }
 
-  .main-navigation__toggle.main-navigation__toggle--is-opened::before,
+  .main-navigation__toggle--is-opened::before,
   .main-navigation__toggle--is-opened::after {
     content: "";
     position: absolute;
@@ -46,15 +46,16 @@
     width: 25px;
     height: 2px;
     background-color: #000000;
+    transition: 0.4s;
   }
 
-  .main-navigation__toggle.main-navigation__toggle--is-opened::before {
+  .main-navigation__toggle--is-opened::before {
     transform: rotate(45deg);
     box-shadow: none
   }
 
 
-  .main-navigation__toggle.main-navigation__toggle--is-opened::after {
+  .main-navigation__toggle--is-opened::after {
     transform: rotate(-45deg);
   }
 
