@@ -2,33 +2,36 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  column-gap: 20px;
-  padding: 26px 20px;
+  padding: 26px 0px;
 }
 
 .cooperation__welcome-words {
   margin: 0;
+  width: 140px;
+
   color: #111111;
   font-size: 16px;
   font-style: normal;
   line-height: 20px;
   text-transform: uppercase;
-  max-width: 160px;
+
 }
 
 .cooperation__address {
   margin: 0;
+  width: 140px;
+
   color: $second-text-color;
   font-family: $second-font, $font-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
-  max-width: 163px;
+
 }
 
-.cooperation--form {
-  background-color: $basic-grey;
+.cooperation--dark-background {
+  // background-color: $basic-grey;
 }
 
 
@@ -39,11 +42,13 @@
   }
 
   .cooperation__welcome-words {
+    width: 163px;
     font-size: 20px;
     line-height: 26px;
   }
 
   .cooperation__address {
+    width: 157px;
     text-align: right;
     font-size: 16px;
     line-height: 20px;
@@ -58,9 +63,11 @@
 
 @media(min-width: $desktop-width) {
   .cooperation {
+    column-gap: 80px;
     position: absolute;
     left: 50px;
     top: 80px;
+    padding: 60px 80px;
     z-index: 1;
     background-color: $third-text-color;
   }

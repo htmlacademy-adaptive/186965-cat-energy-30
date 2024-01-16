@@ -1,8 +1,4 @@
 
-.personal-info {
-  margin-bottom: 46px;
-}
-
 .personal-info__item {
   display: flex;
   column-gap: 13px;
@@ -42,3 +38,6 @@
 }
 
 
+@media(min-width: $desktop-width) {
+
+}

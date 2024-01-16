@@ -72,6 +72,9 @@
   text-align: center;
 }
 
+.user-data__personal {
+  margin-bottom: 46px;
+}
 
 @media(min-width: $tablet-width) {
   .user-data__form-label {
@@ -124,5 +127,41 @@
 
   .user-data__submit-button {
     width: 284px;
+  }
+}
+
+
+@media(min-width: $desktop-width) {
+  .user-data__inner {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 80px;
+    margin-bottom: 70px;
+  }
+
+  .user-data__personal {
+    flex-basis: 50%;
+    max-width: 50%;
+    margin: 0;
+  }
+
+  .user-data__goals {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .user-data__submit-button-wrapper {
+    align-items: center;
+    column-gap: 70px
+  }
+
+  .user-data__submit-button {
+    margin: 0;
+    width: 570px;
+  }
+
+  .user-data__important small {
+    font-size: 16px;
+    line-height: 16px;
   }
 }

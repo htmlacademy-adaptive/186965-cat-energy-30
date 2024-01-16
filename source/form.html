@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Cat Energy</title>
+  <title>Cat Energy. Order.</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
@@ -59,53 +59,55 @@
       </div>
       <form class="main-form__search user-data" action="https://echo.htmlacademy.ru" method="post">
         <div class="user-data__wrapper">
-          <fieldset class="user-data__personal personal-info">
-            <legend class="visually-hidden">Информация о питомце</legend>
-            <ul class="list-reset personal-info__list">
-              <li class="personal-info__item">
-                <label class="user-data__form-label personal-info__label" for="cat-name">ИМЯ:*</label>
-                <input class="user-data__placeholder personal-info__input personal-info__input--name" type="text"
-                  name="name" placeholder="барсик" id="cat-name" required>
-              </li>
-              <li class="personal-info__item">
-                <label class="user-data__form-label personal-info__label" for="cat-weight">Вес (кг):*</label>
-                <input class="user-data__placeholder personal-info__input personal-info__input--weight" type="number"
-                  name="weight" placeholder="7" id="cat-weight" required>
-              </li>
-              <li class="personal-info__item">
-                <label class="user-data__form-label personal-info__label" for="cat-age">Возраст (лет):</label>
-                <input class="user-data__placeholder personal-info__input personal-info__input--age" type="number"
-                  name="age" placeholder="7" id="cat-age" required>
-              </li>
-            </ul>
-          </fieldset>
-          <fieldset class="user-data__goals goals">
-            <legend class="visually-hidden">Цели программы</legend>
-            <ul class="list-reset goals__list">
-              <li class="goals__item">
-                <label class="user-data__form-label goals__label">
-                  <input class="goals__input goals__input--weight-loss visually-hidden" type="radio" name="choice"
-                    checked>
-                  <span class="goals__radio"></span>
-                  Похудение
-                </label>
-              </li>
-              <li class="goals__item">
-                <label class="user-data__form-label goals__label">
-                  <input class="goals__input goals__input--weight-gain visually-hidden" type="radio" name="choice">
-                  <span class="goals__radio"></span>
-                  Набор массы
-                </label>
-              </li>
-              <li class="goals__item">
-                <label class="user-data__form-label goals__label">
-                  <input class="goals__input goals__input--unknown visually-hidden" type="radio" name="choice">
-                  <span class="goals__radio"></span>
-                  Не знаю (Нужен ваш совет)
-                </label>
-              </li>
-            </ul>
-          </fieldset>
+          <div class="user-data__inner">
+            <fieldset class="user-data__personal personal-info">
+              <legend class="visually-hidden">Информация о питомце</legend>
+              <ul class="list-reset personal-info__list">
+                <li class="personal-info__item">
+                  <label class="user-data__form-label personal-info__label" for="cat-name">ИМЯ:*</label>
+                  <input class="user-data__placeholder personal-info__input personal-info__input--name" type="text"
+                    name="name" placeholder="барсик" id="cat-name" required>
+                </li>
+                <li class="personal-info__item">
+                  <label class="user-data__form-label personal-info__label" for="cat-weight">Вес (кг):*</label>
+                  <input class="user-data__placeholder personal-info__input personal-info__input--weight" type="number"
+                    name="weight" placeholder="7" id="cat-weight" required>
+                </li>
+                <li class="personal-info__item">
+                  <label class="user-data__form-label personal-info__label" for="cat-age">Возраст (лет):</label>
+                  <input class="user-data__placeholder personal-info__input personal-info__input--age" type="number"
+                    name="age" placeholder="7" id="cat-age" required>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="user-data__goals goals">
+              <legend class="visually-hidden">Цели программы</legend>
+              <ul class="list-reset goals__list">
+                <li class="goals__item">
+                  <label class="user-data__form-label goals__label">
+                    <input class="goals__input goals__input--weight-loss visually-hidden" type="radio" name="choice"
+                      checked>
+                    <span class="goals__radio"></span>
+                    Похудение
+                  </label>
+                </li>
+                <li class="goals__item">
+                  <label class="user-data__form-label goals__label">
+                    <input class="goals__input goals__input--weight-gain visually-hidden" type="radio" name="choice">
+                    <span class="goals__radio"></span>
+                    Набор массы
+                  </label>
+                </li>
+                <li class="goals__item">
+                  <label class="user-data__form-label goals__label">
+                    <input class="goals__input goals__input--unknown visually-hidden" type="radio" name="choice">
+                    <span class="goals__radio"></span>
+                    Не знаю (Нужен ваш совет)
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
           <fieldset class="user-data__contacts owner-contacts">
             <legend class="user-data__legend user-data__legend--title-line owner-contacts__heading">Контактные данные
               (владельца кота)</legend>
@@ -181,18 +183,20 @@
   </div>
   <footer class="page-footer">
     <div class="page-footer__wrapper">
+      <div class="container">
+        <address class="page-footer__contacts cooperation">
 
-      <address class="page-footer__contacts cooperation cooperation--form">
-        <p class="cooperation__welcome-words">приглашаем к сотрудничеству дилеров!</p>
-        <p class="cooperation__address">
-          <span>
-            ул. Большая
-            Конюшенная, д. 19/8
-          </span>
-          Санкт-Петербург
-        </p>
-      </address>
+          <p class="cooperation__welcome-words">приглашаем к сотрудничеству дилеров!</p>
+          <p class="cooperation__address">
+            <span>
+              ул. Большая
+              Конюшенная, д. 19/8
+            </span>
+            Санкт-Петербург
+          </p>
 
+        </address>
+      </div>
       <div class="page-footer__map-wrapper">
         <div id="map" style="width:100%; height:400px"></div>
       </div>

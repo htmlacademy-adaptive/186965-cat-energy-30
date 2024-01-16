@@ -24,14 +24,14 @@
 
 .owner-contacts__item--email {
   &::after {
-    right: 35px;
+    right: 17px;
     background-image: url("../../images/icons/stack.svg#icon-email");
   }
 }
 
 .owner-contacts__item--phone {
   &::after {
-    right: 35px;
+    right: 17px;
     background-image: url("../../images/icons/stack.svg#icon-phone");
 
 
@@ -39,10 +39,13 @@
 }
 
 .owner-contacts__input {
-  position: relative;
   padding: 12px 15px 11px;
   width: 100%
 
+}
+
+.owner-contacts__item {
+  position: relative;
 }
 
 .owner-contacts__input--email {
@@ -69,18 +72,24 @@
     margin-bottom: 65px;
   }
 
-  .owner-contacts__item--email {
-    &::after {
-      right: 87px;
 
-    }
+}
+
+
+@media(min-width: $desktop-width) {
+  .owner-contacts__list {
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
   }
 
-  .owner-contacts__item--phone {
-    &::after {
-      right: 85px;
+  .owner-contacts__item {
+    flex-basis: 50%;
+    max-width: 50%;
 
+  }
 
-    }
+  .owner-contacts__item:not(:last-child) {
+    margin-bottom: 0;
   }
 }

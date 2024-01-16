@@ -54,13 +54,24 @@
 
 
 @media(min-width: $desktop-width) {
-  .site-list__link {
+  .site-list--index .site-list__link {
     color: #ffffff;
+
+  }
+
+  .site-list--index  .site-list__item--current  {
+    &::after {
+      background-color: #ffffff;
+    }
+  }
+
+  .site-list__link {
+    color: #000000;
   }
 
   .site-list__item--current {
     &::after {
-      background-color: #ffffff;
+      background-color: $main-button-background-color;
     }
   }
 }

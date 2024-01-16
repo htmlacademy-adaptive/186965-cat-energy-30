@@ -1,22 +1,33 @@
+.extra-goods {
+  position: relative;
+  margin: 0 -20px;
+  margin-bottom: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 25px;
+  border-top: 1px solid #EBEBEB;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 6%;
+    left: 0px;
+    z-index: -1;
+    width: 100vw;
+    height: 3px;
+    background-color: $main-button-background-color;
+  }
+}
+
 .extra-goods__heading {
+  margin: 0;
+  margin: 0 20px 36px -40px;
+  padding: 0px 0px 0 40px;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+  background-color: #fff;
 }
 
 
-.goods-card__heading {
-  color: $special-grey-text-color;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 16px;
-  text-transform: uppercase;
-}
 
-.goods-card__cell {
-  color: $second-text-color;
-  font-family: $second-font;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 14px;
-}
