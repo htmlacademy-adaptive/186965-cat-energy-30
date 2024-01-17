@@ -56,3 +56,52 @@
   border: none;
 }
 
+@media (min-width: $tablet-width) {
+  .goods {
+    margin-bottom: 0;
+    padding-top: 160px;
+    padding-bottom: 40px;
+    padding-left: 37px;
+    padding-right: 37px;
+    border: 1px solid $basic-grey;
+  }
+
+  .goods {
+    &::after {
+      width: 60px;
+    }
+
+  }
+
+
+  .goods {
+    &::before {
+      width: 60px;
+    }
+  }
+
+  .goods__heading {
+    margin-bottom: 23px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .goods__tastes {
+    margin-bottom: 120px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .goods__wrapper {
+    display: flex;
+    flex-direction: column
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .goods {
+    padding-left: 25px;
+    padding-right: 25px ;
+  }
+}

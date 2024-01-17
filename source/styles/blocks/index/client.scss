@@ -14,6 +14,8 @@
 }
 
 .client__story {
+  margin: 0;
+  margin-bottom: 18px;
   color: $second-text-color;
   font-family: $second-font, $font-serif;
   font-size: 14px;
@@ -23,7 +25,7 @@
 .client__weight-wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
 }
 
@@ -35,7 +37,7 @@
 }
 
 
-@media(min-width: 510px) {
+@media (min-width: 510px) {
   .client__weight-wrapper {
     width: 80%;
     margin-left: auto;
@@ -43,7 +45,7 @@
   }
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .client {
     padding: 0;
     background-color: transparent;
@@ -84,7 +86,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .client {
     padding-left: 0;
     padding-right: 0;

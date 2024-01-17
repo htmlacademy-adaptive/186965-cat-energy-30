@@ -5,11 +5,23 @@
 
 .methods__description {
   margin: 0;
+  padding-top: 0px;
   color: $second-text-color;
   font-family: $second-font, $font-serif;
   font-size: 14px;
   line-height: 18px;
+}
 
+.methods__item--powder .methods__description {
+  padding-top: 2px;
+}
+
+.methods__item--food .methods__description {
+  padding-top: 2px;
+}
+
+.methods__item--useful-time .methods__description {
+  padding-top: 2px;
 }
 
 .methods__item {
@@ -57,7 +69,7 @@
 }
 
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .methods {
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     row-gap: 135px;
@@ -95,7 +107,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .methods {
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
     column-gap: 94px;

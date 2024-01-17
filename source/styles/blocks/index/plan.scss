@@ -18,6 +18,8 @@
   }
 }
 
+
+
 .plan__name-wrapper {
   margin-bottom: 29px;
 }
@@ -33,28 +35,7 @@
 }
 
 .plan--pro .plan__name {
-  padding-left: 75px;
-}
-
-.plan--slim .programs__inner {
-  &::before {
-    width: 50px;
-    height: 53px;
-    background-image: url("../../images/icons/stack.svg#icon-cat-slim");
-    top: 7%;
-    // transform: translateY(-7%);
-  }
-}
-
-
-.plan--pro .programs__inner {
-  &::before {
-    width: 67px;
-    height: 50px;
-    background-image: url("../../images/icons/stack.svg#icon-cat-pro");
-    top: 7%;
-    transform: translateY(-7%);
-  }
+  padding-left: 72px;
 }
 
 
@@ -71,9 +52,9 @@
   &::after {
     content: "";
     position: absolute;
-    right: -30px;
+    right: -33px;
     width: 32px;
-    height: 10px;
+    height: 12px;
     mask-image: url("../../images/icons/stack.svg#icon-arrow");
     mask-repeat: no-repeat;
     background-color: #000000;
@@ -81,7 +62,7 @@
   }
 }
 
-@media(max-width: $mobile-width-only) {
+@media (max-width: $mobile-width-only) {
   .plan__description {
     margin-bottom: 15px;
     padding-bottom: 23px;
@@ -89,7 +70,7 @@
   }
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .plan__name-wrapper {
     margin-bottom: 24px;
   }
@@ -139,7 +120,7 @@
 }
 
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .plan__description {
     padding-right: 0;
   }

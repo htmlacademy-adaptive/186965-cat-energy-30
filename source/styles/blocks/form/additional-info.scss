@@ -45,7 +45,7 @@
 }
 
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .additional-info__list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));

@@ -63,7 +63,7 @@
 }
 
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .owner-contacts__heading {
     margin-right: 0
   }
@@ -76,7 +76,7 @@
 }
 
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .owner-contacts__list {
     display: flex;
     align-items: center;

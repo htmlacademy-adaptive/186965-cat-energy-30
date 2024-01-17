@@ -10,9 +10,8 @@
   <link rel="apple-touch-icon" href="favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="styles/styles.css">
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=b741650d-aeca-472d-a761-ce8550b60bb1&lang=ru_RU"
-    type="text/javascript" defer>
-    </script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=b741650d-aeca-472d-a761-ce8550b60bb1&lang=ru_RU" defer>
+  </script>
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -30,7 +29,7 @@
             alt="Логотип 'Cat Energy'.">
         </picture>
       </a>
-      <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть
+      <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть
           меню</span></button>
       <nav class="main-navigation">
 
@@ -119,7 +118,7 @@
                   Pro
                   поможет вашему коту нарастить необходимые мышцы!</p>
                 <div class="plan__link-wrapper">
-                  <a class="plan__link" href="catalog.html">каталог slim</a>
+                  <a class="plan__link" href="catalog.html">каталог pro</a>
                 </div>
               </div>
             </article>
@@ -249,7 +248,8 @@
             <div class="result__toggle slider__scale">
               <div class="slider__grip" style="margin-left: 0px;">
                 <div class="slider__line"></div>
-                <svg class="slider__svg" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="slider__svg" width="40" height="40" viewBox="0 0 40 40" fill="none"
+                  xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" role="img">
                   <rect x="1" y="1" width="38" height="38" rx="19" fill="white" />
                   <rect x="1" y="1" width="38" height="38" rx="19" stroke="currentColor" stroke-width="2" />
                   <path d="M16 11L8 20L16 29V11Z" fill="currentColor" />
@@ -330,9 +330,9 @@
                     fill="#666666" />
                 </g>
                 <defs>
-                  <clipPath id="clip0_101920_344">
+                  <clippath>
                     <rect width="27" height="34" fill="white" />
-                  </clipPath>
+                  </clippath>
                 </defs>
               </svg>
 
@@ -343,8 +343,8 @@
     </div>
   </footer>
 
-  <script src="scripts/map.js" type="module"></script>
-  <script src="scripts/mobile.menu.js" type="module"></script>
+  <script src="scripts/map.js" defer></script>
+  <script src="scripts/mobile.menu.js" defer></script>
 </body>
 
 </html>

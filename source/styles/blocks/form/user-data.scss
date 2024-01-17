@@ -76,7 +76,7 @@
   margin-bottom: 46px;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .user-data__form-label {
     font-size: 20px;
     line-height: normal;
@@ -131,7 +131,7 @@
 }
 
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .user-data__inner {
     display: flex;
     justify-content: space-between;

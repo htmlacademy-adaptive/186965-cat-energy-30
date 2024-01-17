@@ -1,5 +1,22 @@
 .food-catalog {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+  column-gap: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .food-catalog {
+    grid-template-columns: repeat(auto-fill,minmax(324px,1fr));;
+    column-gap: 60px;
+    row-gap: 141px;
+  }
+
+}
+
+
+@media (min-width: $desktop-width) {
+  .food-catalog {
+    grid-template-columns: repeat(auto-fill,minmax(245px,1fr));
+    column-gap: 80px;
+  }
 }

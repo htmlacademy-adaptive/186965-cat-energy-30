@@ -57,7 +57,7 @@ fieldset {
 }
 
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .button {
     font-size: 20px;
     line-height: 26px;
@@ -70,7 +70,7 @@ fieldset {
 }
 
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .container  {
     padding-left: 110px;
     padding-right: 110px;

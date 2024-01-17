@@ -12,8 +12,8 @@
 
 .days__caption {
   position: absolute;
-  top: 48px;
-  left: 19px;
+  top: 47px;
+  left: 16px;
   margin: 0px;
   width: 90px;
   padding-left: 15px;
@@ -26,7 +26,7 @@
   text-align: center;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .days {
     padding: 15px 30px 18px 30px;
   }
@@ -49,7 +49,7 @@
 }
 
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .days__caption {
     background-color: #F2F2F2;
   }

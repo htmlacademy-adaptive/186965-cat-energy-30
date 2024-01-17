@@ -3,9 +3,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-top: 13px;
-  // padding-left: 20px;
-  // padding-right: 20px;
+  padding-top: 14px;
+  margin-bottom: 13px;
 }
 
 .page-header__logo {
@@ -13,7 +12,7 @@
   max-width: 190px;
 }
 
-@media(max-width: $mobile-width-only) {
+@media (max-width: $mobile-width-only) {
   .page-header--index {
     position: relative;
 
@@ -32,9 +31,6 @@
     }
   }
 
-  .page-header__logo {
-    margin-bottom: 5px;
-  }
 
   .page-header--form {
     border-bottom: 1px solid #D9D9D9;
@@ -42,7 +38,7 @@
 }
 
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .page-header__container {
     align-items: center;
     padding-top: 25px;
@@ -50,7 +46,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .page-header__container {
     padding-top: 55px;
 
