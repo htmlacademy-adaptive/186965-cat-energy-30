@@ -50,7 +50,15 @@
 
 
 @media (min-width: $desktop-width) {
+  .days {
+    padding-left: 29px;
+    padding-right: 29px;
+  }
+
   .days__caption {
+    width: 100%;
+    top: 64px;
+    left: -1px;
     background-color: #f2f2f2;
   }
 }

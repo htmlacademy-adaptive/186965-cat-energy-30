@@ -15,7 +15,7 @@
 
 .client__story {
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 19px;
   color: $second-text-color;
   font-family: $second-font, $font-serif;
   font-size: 14px;
@@ -61,7 +61,7 @@
   }
 
   .client__story {
-    margin-bottom: 65px;
+    margin-bottom: 55px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -69,18 +69,20 @@
   .client__inner {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   .client__weight-wrapper {
+    width: 75%;
     margin: 0;
     justify-content: flex-start;
-    column-gap: 43px;
+    column-gap: 42px;
   }
 
   .client__data {
     padding-left: 30px;
     padding-right: 30px;
-    margin-bottom: 99px;
+    margin-bottom: 75px;
   }
 }
 
@@ -88,6 +90,11 @@
   .client {
     padding-left: 0;
     padding-right: 0;
+    margin-bottom: -116px;
+  }
+
+  .client__header {
+    margin-bottom: 77px;
   }
 
   .client__wrapper {
@@ -97,8 +104,8 @@
   .client__wrap {
     display: flex;
     padding: 0;
-    padding-top: 70px;
-    padding-bottom: 75px;
+    padding-top: 69px;
+    padding-bottom: 0;
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
@@ -117,15 +124,16 @@
   }
 
   .client__story {
-    padding-left: 110px;
-    padding-right: 337px;
+    padding-left: 80px;
+    padding-right: 286px;
+    margin-bottom: 68px;
   }
 
   .client__inner {
     flex-direction: column;
     align-items: flex-start;
     row-gap: 55px;
-    padding-left: 110px;
+    padding-left: 80px;
     padding-right: 110px;
   }
 }

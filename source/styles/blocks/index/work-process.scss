@@ -4,7 +4,7 @@
 
 .work-process__header {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
@@ -12,6 +12,11 @@
 
 
 @media (min-width: $tablet-width) {
+  .work-process {
+    margin-bottom: 0;
+  }
+
+
   .work-process__header {
     margin-bottom: 72px;
     font-size: 60px;

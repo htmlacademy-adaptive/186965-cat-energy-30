@@ -18,6 +18,10 @@
 
 
 @media (min-width: $tablet-width) {
+  .copyright {
+    margin-top: -2px;
+  }
+
   .copyright__icon-link {
     justify-content: flex-end;
     column-gap: 23px;

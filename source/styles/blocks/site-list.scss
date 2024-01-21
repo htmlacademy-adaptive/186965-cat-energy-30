@@ -30,7 +30,7 @@
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
-    column-gap: 33px;
+    column-gap: 34px;
   }
 
   .site-list__item--current {
@@ -45,6 +45,11 @@
       height: 2px;
       background-color: $main-button-background-color;
     }
+  }
+
+  .site-list__link {
+    font-size: 18px;
+    line-height: 24px;
   }
 }
 
@@ -61,6 +66,8 @@
   }
 
   .site-list__link {
+    font-size: 20px;
+    line-height: normal;
     color: #000000;
   }
 
