@@ -1,5 +1,20 @@
+.work-process {
+  margin-bottom: 49px;
+}
+
 .work-process__header {
+  margin: 0;
+  margin-bottom: 40px;
   font-size: 36px;
   font-weight: 400;
   line-height: 40px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .work-process__header {
+    margin-bottom: 72px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }

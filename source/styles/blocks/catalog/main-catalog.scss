@@ -1,6 +1,32 @@
+.main-catalog__wrapper {
+  padding-top: 27px;
+}
+
 .main-catalog__heading {
+  margin: 0;
+  margin-bottom: 41px;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
   line-height: 36px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .main-catalog__wrapper {
+    padding-top: 40px;
+  }
+
+  .main-catalog__heading {
+    margin-bottom: 165px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .main-catalog__wrapper {
+    padding-top: 50px;
+  }
 }

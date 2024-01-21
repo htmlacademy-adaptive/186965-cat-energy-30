@@ -6,24 +6,35 @@
 @import "./global/common.scss";
 
 /* BLOCKS */
+@import "./blocks/page-header.scss";
+@import "./blocks/main-navigation.scss";
 @import "./blocks/site-list.scss";
 @import "./blocks/cooperation.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
 
 //index.html
 @import "./blocks/index/show-card.scss";
 @import "./blocks/index/programs.scss";
-@import "./blocks/index/plans.scss";
+@import "./blocks/index/plan.scss";
 @import "./blocks/index/work-process.scss";
 @import "./blocks/index/methods.scss";
 @import "./blocks/index/client.scss";
 @import "./blocks/index/weight.scss";
 @import "./blocks/index/days.scss";
 @import "./blocks/index/expenses.scss";
+@import "./blocks/index/page-main.scss";
+@import "./blocks/index/slider.scss";
 
 // form.html
 @import "./blocks/form/main-form.scss";
 @import "./blocks/form/user-data.scss";
 @import "./blocks/form/owner-contacts.scss";
+@import "./blocks/form/personal-info.scss";
+@import "./blocks/form/goals.scss";
+@import "./blocks/form/comment.scss";
+@import "./blocks/form/additional-info.scss";
 
 
 //catalog
@@ -32,3 +43,5 @@
 @import "./blocks/catalog/goods.scss";
 @import "./blocks/catalog/extra-goods.scss";
 @import "./blocks/catalog/cat-present.scss";
+@import "./blocks/catalog/food-catalog.scss";
+@import "./blocks/catalog/goods-card.scss";

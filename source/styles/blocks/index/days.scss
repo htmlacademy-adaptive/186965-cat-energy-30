@@ -1,11 +1,56 @@
+.days {
+  position: relative;
+  border-radius: 5px;
+  padding: 15px 20px;
+  border: 1px solid #cdcdcd;
+}
+
 .days__loss {
   font-size: 24px;
   line-height: 24px;
 }
 
 .days__caption {
+  position: absolute;
+  top: 47px;
+  left: 16px;
+  margin: 0;
+  width: 90px;
+  padding-left: 15px;
+  padding-right: 18px;
+  background-color: #eaeaea;
   color: $second-text-color;
   font-family: $second-font, $font-serif;
   font-size: 12px;
   line-height: 100%;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .days {
+    padding: 15px 30px 18px 30px;
+  }
+
+  .days__loss {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .days__caption {
+    padding-left: 10px;
+    padding-right: 10px;
+    top: 62px;
+    left: 7px;
+    width: 90%;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .days__caption {
+    background-color: #f2f2f2;
+  }
 }

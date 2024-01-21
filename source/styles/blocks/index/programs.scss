@@ -1,51 +1,107 @@
+.programs {
+  margin-bottom: 20px;
+}
+
+.programs__wrapper {
+  display: grid;
+  row-gap: 20px;
+}
+
 .programs__item {
+  margin-left: auto;
+  margin-right: auto;
   background-color: #f2f2f2;
 }
 
-.plan__name {
-  position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
+.programs__inner {
+  padding: 29px 33px 18px 20px;
+}
+
+.plan--slim .programs__inner {
+  &::before {
     width: 50px;
+    height: 53px;
+    background-image: url("../../images/icons/stack.svg#icon-cat-slim");
+    top: 8%;
+    // left: 20px;
+  }
+}
+
+.plan--pro .programs__inner {
+  &::before {
+    width: 67px;
     height: 50px;
-    background-color: $main-button-background-color;
-    border-radius: 50px;
+    background-image: url("../../images/icons/stack.svg#icon-cat-pro");
+    top: 9%;
+    left: 12px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .programs {
+    margin-bottom: 45px;
+  }
+
+  .programs__wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(708px, 1fr));
+    row-gap: 30px;
+  }
+
+  .programs__inner {
+    padding: 77px 62px 57px 52px;
+  }
+
+  .plan--slim .programs__inner {
+    &::before {
+      width: 200px;
+      height: 211px;
+      top: 20%;
+      right: 30px;
+    }
+  }
+
+  .plan--pro .programs__inner {
+    &::before {
+      width: 268px;
+      height: 200px;
+      top: 20%;
+      right: 30px;
+      left: auto;
+    }
   }
 }
 
 
-.plan--slim .plan__name::before {
-  content: "";
-  position: absolute;
-  width: 36px;
-  height: 50px;
-  background-image: url("../../images/icons/stack.svg#icon-cat-slim");
-  background-repeat: no-repeat;
-}
+@media (min-width: $desktop-width) {
+  .programs {
+    margin-bottom: 71px;
+  }
 
-.plan--pro .plan__name::before {
-  content: "";
-  position: absolute;
-  width: 67px;
-  height: 28px;
-  background-image: url("../../images/icons/stack.svg#icon-cat-pro");
-  background-repeat: no-repeat;
-}
+  .programs__wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(570px, 1fr));
+    column-gap: 80px;
+  }
 
+  .programs__inner {
+    padding: 77px 61px 59px 62px;
+  }
 
-.plan__link {
-  position: relative;
+  .plan--slim .programs__inner {
+    &::before {
+      width: 100px;
+      height: 100px;
+      left: 10%;
+      top: 10%;
+    }
+  }
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 32px;
-    height: 10px;
-    mask-image: url("../../images/icons/stack.svg#icon-arrow");
-    mask-repeat: no-repeat;
-    background-color: #000000;
+  .plan--pro .programs__inner {
+    &::before {
+      width: 110px;
+      height: 110px;
+      left: 10%;
+      top: 10%;
+    }
   }
 }
-

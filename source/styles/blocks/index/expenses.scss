@@ -1,5 +1,40 @@
+.expenses {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .expenses__text {
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.expenses__amount {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .expenses__text {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .expenses__amount {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .expenses {
+    margin: 0;
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .expenses {
+    display: flex;
+    column-gap: 63px;
+  }
 }
