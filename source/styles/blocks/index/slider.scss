@@ -2,14 +2,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 34px;
+  position: relative;
+  width: 280px;
+  height: 295px;
 }
 
-.slider__container {
-  position: relative;
-  width: 320px;
-  height: 256px;
-}
 
 .slider__images {
   position: relative;
@@ -36,13 +33,13 @@
 
 .slider__image--before {
   z-index: 1;
+  left: 0%;
 }
 
 .slider__image--after {
   display: flex;
   justify-content: flex-end;
-  width: 43%;
-  right: 20px;
+  right: 0;
   z-index: 0;
 }
 
@@ -51,9 +48,9 @@
   align-items: center;
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 49%;
   width: 2px;
-  height: 100%;
+  height: 88%;
   border-radius: 6px;
   box-sizing: border-box;
 }
@@ -100,29 +97,34 @@
   transform: translateX(-50%);
   background-color: $special-grey;
   transition: background-color 0.3s;
+  border-radius: 2px;
 }
 
 
 @media (min-width: $tablet-width) {
   .slider {
+    width: 100%;
+    height: 640px;
     background-image: linear-gradient(#ffffff 0, #ffffff 180px, #eaeaea 180px, #eaeaea 100%);
     overflow: hidden;
-  }
-
-  .slider__container {
-    width: 560px;
-    height: 512px;
   }
 
   .slider__image {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 36%;
+    top: 4%;
+  }
+
+  .slider__image--before{
+    left: 14%;
   }
 
   .slider__image--after {
     align-items: flex-end;
-    right: 0;
+    justify-content: flex-start;
+    right: auto;
+    left: 50%;
   }
 
   .slider__image--after img {
@@ -136,15 +138,14 @@
 
   .slider__scale {
     position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
+    top: 4%;
+    left: 50%;
+    height: 81%;
     padding: 4px 0;
+    border-radius: 5px;
   }
 
   .slider__grip {
-    margin-left: 50%;
-
     &:hover {
       color: $main-button-background-color;
     }
@@ -153,15 +154,6 @@
       background-color: $main-button-background-color;
     }
   }
-
-
-  // .slider__grip.is_active .slider__line {
-  //   background-color: #5eaa2f;
-  // }
-
-  // .slider__grip.is_active {
-  //   color: #5eaa2f;
-  // }
 }
 
 @media (min-width: 1300px) {
@@ -172,13 +164,33 @@
 
 @media (min-width: $desktop-width) {
   .slider {
-    padding-bottom: 35px;
+    bottom: 200px;
+    height: 512px;
+    padding-bottom: 0;
     margin: 0;
     background-image: none;
     overflow: visible;
   }
 
+
   .slider__scale {
     width: 1%;
+    top: -8px;
+    left: 33%;
+    height: 101%;
+  }
+
+  .slider__image {
+    width: 48%;
+    left: -15%;
+    top: -4px;
+  }
+
+  .slider__image--after {
+    right: auto;
+    left: 33%;
+    top: -4px;
+    bottom: auto;
+    width: 48%;
   }
 }

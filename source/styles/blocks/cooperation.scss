@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 26px 0;
+  padding: 27px 0 25px 0;
 }
 
 .cooperation__welcome-words {
@@ -29,7 +29,7 @@
 
 @media (min-width: $tablet-width) {
   .cooperation {
-    padding: 60px 70px;
+    padding: 62px 40px;
   }
 
   .cooperation__welcome-words {
@@ -39,6 +39,8 @@
   }
 
   .cooperation__address {
+    margin-top: -1px;
+    margin-right: -4px;
     width: 157px;
     text-align: right;
     font-size: 16px;
@@ -47,7 +49,11 @@
 
   .cooperation__address span {
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+  }
+
+  #map {
+    height: 400px;
   }
 }
 
@@ -56,9 +62,10 @@
   .cooperation {
     column-gap: 80px;
     position: absolute;
-    left: 50px;
-    top: 80px;
+    left: 108px;
+    top: 91px;
     padding: 60px 80px;
+    column-gap: 88px;
     z-index: 1;
     background-color: $third-text-color;
   }

@@ -17,13 +17,13 @@
 .page-footer__logo-wrapper {
   width: 100%;
   text-align: center;
-  padding-bottom: 20px;
+  padding-bottom: 14px;
   border-bottom: 1px solid #d9d9d9;
 }
 
 .page-footer__social-wrapper {
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 14px;
   border-bottom: 1px solid #d9d9d9;
 }
 
@@ -31,7 +31,7 @@
 @media (min-width: $tablet-width) {
   .page-footer__inner-wrap {
     flex-direction: row;
-    padding: 60px 30px;
+    padding: 57px 30px;
   }
 
   .page-footer__logo-wrapper {
