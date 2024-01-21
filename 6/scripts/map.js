@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{let e=window.ymaps;e.ready(()=>{let a=new e.Map("map",{center:[59.938679,30.3230044],zoom:14,controls:[]}),n=new e.Placemark(a.getCenter(),{},{iconLayout:"default#image",iconImageHref:"images/map-pin.png",iconImageSize:[57,53],iconImageOffset:[-26,-42]});a.geoObjects.add(n)})});

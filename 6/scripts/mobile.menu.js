@@ -1,0 +1,1 @@
+var e=document.querySelector(".page-header__toggle"),n=document.querySelector(".main-navigation");e.addEventListener("click",t=>{t.preventDefault(),e.classList.toggle("page-header--is-opened"),n.classList.toggle("main-navigation--is-opened")});
