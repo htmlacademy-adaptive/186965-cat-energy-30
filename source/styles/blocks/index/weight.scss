@@ -2,7 +2,7 @@
   position: relative;
   border-radius: 5%;
   padding: 15px 42px;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #cdcdcd;
 }
 
 .weight__loss {
@@ -14,7 +14,7 @@
   position: absolute;
   top: 47px;
   left: 15px;
-  margin: 0px;
+  margin: 0;
   width: 90px;
   padding-left: 15px;
   padding-right: 15px;
@@ -49,9 +49,7 @@
 
 
 @media (min-width: $desktop-width) {
-
   .weight__caption {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
   }
-
 }

@@ -26,14 +26,12 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 32px;
-
 }
 
 .client__box {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 
@@ -63,7 +61,7 @@
   }
 
   .client__story {
-    margin-bottom: 65px  ;
+    margin-bottom: 65px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -92,10 +90,8 @@
     padding-right: 0;
   }
 
-
-  .client__wrapper{
-
-    background-color: #F2F2F2;
+  .client__wrapper {
+    background-color: #f2f2f2;
   }
 
   .client__wrap {
@@ -118,7 +114,6 @@
     padding-right: 110px;
     margin-left: auto;
     margin-right: auto;
-
   }
 
   .client__story {
@@ -133,8 +128,4 @@
     padding-left: 110px;
     padding-right: 110px;
   }
-
-
-
-
 }

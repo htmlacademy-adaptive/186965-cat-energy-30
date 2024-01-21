@@ -1,5 +1,3 @@
-
-
 .show-card__container {
   padding-top: 27px;
   margin-bottom: 20px;
@@ -18,7 +16,6 @@
   font-weight: 400;
 }
 
-
 .show-card__slogan {
   margin: 0;
   margin-bottom: 28px;
@@ -28,7 +25,6 @@
   font-weight: 400;
   text-transform: uppercase;
 }
-
 
 .show-card__button-wrapper {
   position: relative;
@@ -41,15 +37,13 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .show-card__name  br {
+  .show-card__name br {
     display: none;
   }
-
 }
 
 
 @media (min-width: $tablet-width) {
-
   .show-card__container {
     padding: 0;
     padding-left: 90px;
@@ -80,10 +74,9 @@
 
   .show-card__picture {
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     right: 0;
   }
-
 
   .show-card__button-program {
     width: 244px;
@@ -93,7 +86,6 @@
 
 
 @media (min-width: $desktop-width) {
-
   .show-card__container {
     padding-top: 110px;
     margin-bottom: 82px;
@@ -101,10 +93,8 @@
     padding-left: 80px;
   }
 
-
   .show-card__picture {
     top: 20px;
     left: 36.7%;
   }
-
 }

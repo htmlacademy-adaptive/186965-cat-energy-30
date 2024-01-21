@@ -6,6 +6,7 @@
   display: flex;
   column-gap: 13px;
   align-items: center;
+  position: relative;
 
   &:not(:last-child) {
     margin-bottom: 14px;
@@ -33,25 +34,16 @@
   &::after {
     right: 17px;
     background-image: url("../../images/icons/stack.svg#icon-phone");
-
-
   }
 }
 
 .owner-contacts__input {
   padding: 12px 15px 11px;
-  width: 100%
-
-}
-
-.owner-contacts__item {
-  position: relative;
+  width: 100%;
 }
 
 .owner-contacts__input--email {
   min-width: 217px;
-
-
 }
 
 .owner-contacts__input--phone {
@@ -65,14 +57,12 @@
 
 @media (min-width: $tablet-width) {
   .owner-contacts__heading {
-    margin-right: 0
+    margin-right: 0;
   }
 
   .owner-contacts {
     margin-bottom: 65px;
   }
-
-
 }
 
 
@@ -86,7 +76,6 @@
   .owner-contacts__item {
     flex-basis: 50%;
     max-width: 50%;
-
   }
 
   .owner-contacts__item:not(:last-child) {

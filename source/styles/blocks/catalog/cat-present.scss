@@ -11,7 +11,7 @@
   min-height: 290px;
   padding: 186px 61px 43px 58px;
   background-color: $green-background-opacity;
-  background-image: url('../../../images/cat-present-background.jpg');
+  background-image: url("../../../images/cat-present-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -29,13 +29,11 @@
 
 
 .cat-present__text {
-
   margin: 0;
   color: $third-text-color;
   font-family: $second-font;
   font-size: 16px;
   line-height: 20px;
-
 }
 
 
@@ -44,26 +42,22 @@
     margin-bottom: 75px;
   }
 
-  .cat-present__wrapper {
-    min-height: 200px;
-    padding-right: 77px;
-    padding-right: 125px;
-    padding-top: 71px;
-    padding-bottom: 69px;
-    justify-content: flex-end;
-
-  }
-
   .cat-present__text {
     max-width: 161px;
     text-align: left;
   }
 
   .cat-present__wrapper {
+    min-height: 200px;
+    padding-left: 77px;
+    padding-right: 125px;
+    padding-top: 71px;
+    padding-bottom: 69px;
+    justify-content: flex-end;
+
     &::before {
       top: 65px;
       left: 75px;
     }
   }
-
 }

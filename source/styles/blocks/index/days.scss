@@ -2,7 +2,7 @@
   position: relative;
   border-radius: 5px;
   padding: 15px 20px;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #cdcdcd;
 }
 
 .days__loss {
@@ -14,7 +14,7 @@
   position: absolute;
   top: 47px;
   left: 16px;
-  margin: 0px;
+  margin: 0;
   width: 90px;
   padding-left: 15px;
   padding-right: 18px;
@@ -51,6 +51,6 @@
 
 @media (min-width: $desktop-width) {
   .days__caption {
-    background-color: #F2F2F2;
+    background-color: #f2f2f2;
   }
 }

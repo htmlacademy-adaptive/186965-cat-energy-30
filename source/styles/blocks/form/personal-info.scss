@@ -4,8 +4,6 @@
   column-gap: 13px;
   align-items: center;
 
-
-
   &:not(:last-child) {
     margin-bottom: 14px;
   }
@@ -18,12 +16,10 @@
 
 .personal-info__input--name {
   min-width: 228px;
-
 }
 
 .personal-info__input--weight {
   min-width: 207px;
-
 }
 
 .personal-info__input--age {
@@ -35,9 +31,4 @@
   .personal-info__input {
     padding: 11px 11px 11px 20px;
   }
-}
-
-
-@media (min-width: $desktop-width) {
-
 }

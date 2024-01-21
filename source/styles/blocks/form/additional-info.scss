@@ -2,19 +2,16 @@
   margin-bottom: 34px;
 }
 
-
 .additional-info__item {
   &:not(:last-child) {
     margin-bottom: 13px;
   }
 }
 
-
 .additional-info__label {
   display: flex;
   align-items: center;
 }
-
 
 .additional-info__custom-checkbox {
   display: block;
@@ -25,12 +22,10 @@
   width: 30px;
   height: 30px;
   border: 1px solid #cdcdcd;
-
-
 }
 
 
-.additional-info__input[type="checkbox"]:checked  + .additional-info__custom-checkbox {
+.additional-info__input[type="checkbox"]:checked + .additional-info__custom-checkbox {
   &::before {
     content: "";
     position: absolute;
@@ -54,18 +49,14 @@
     column-gap: 50px;
   }
 
-
-  .additional-info__custom-checkbox {
-    width: 40px;
-    height: 40px ;
-  }
-
-  .additional-info__input[type=checkbox]:checked+.additional-info__custom-checkbox::before {
-    top: 5px;
-    left: 15px;
-  }
-
   .additional-info__custom-checkbox {
     margin-right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .additional-info__input[type="checkbox"]:checked + .additional-info__custom-checkbox::before {
+    top: 5px;
+    left: 15px;
   }
 }

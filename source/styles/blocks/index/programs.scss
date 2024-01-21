@@ -8,7 +8,6 @@
 }
 
 .programs__item {
-
   margin-left: auto;
   margin-right: auto;
   background-color: #f2f2f2;
@@ -25,11 +24,9 @@
     height: 53px;
     background-image: url("../../images/icons/stack.svg#icon-cat-slim");
     top: 8%;
-    left: 20px;
-
+    // left: 20px;
   }
 }
-
 
 .plan--pro .programs__inner {
   &::before {
@@ -47,7 +44,7 @@
   }
 
   .programs__wrapper {
-    grid-template-columns: repeat(auto-fill, minmax(708px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(708px, 1fr));
     row-gap: 30px;
   }
 
@@ -55,6 +52,24 @@
     padding: 77px 62px 57px 52px;
   }
 
+  .plan--slim .programs__inner {
+    &::before {
+      width: 200px;
+      height: 211px;
+      top: 20%;
+      right: 30px;
+    }
+  }
+
+  .plan--pro .programs__inner {
+    &::before {
+      width: 268px;
+      height: 200px;
+      top: 20%;
+      right: 30px;
+      left: auto;
+    }
+  }
 }
 
 
@@ -64,11 +79,29 @@
   }
 
   .programs__wrapper {
-    grid-template-columns: repeat(auto-fill, minmax(570px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(570px, 1fr));
     column-gap: 80px;
   }
 
-  .programs__inner{
+  .programs__inner {
     padding: 77px 61px 59px 62px;
+  }
+
+  .plan--slim .programs__inner {
+    &::before {
+      width: 100px;
+      height: 100px;
+      left: 10%;
+      top: 10%;
+    }
+  }
+
+  .plan--pro .programs__inner {
+    &::before {
+      width: 110px;
+      height: 110px;
+      left: 10%;
+      top: 10%;
+    }
   }
 }

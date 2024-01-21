@@ -8,7 +8,6 @@
   text-transform: uppercase;
 }
 
-
 .user-data__legend {
   position: relative;
   padding: 0;
@@ -34,14 +33,14 @@
   }
 }
 
-.user-data__legend--title-line  {
+.user-data__legend--title-line {
   &::after {
     top: 30%;
   }
 }
 
 .user-data__placeholder {
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
   font-family: inherit;
   font-size: 16px;
   font-style: normal;
@@ -130,7 +129,6 @@
   }
 }
 
-
 @media (min-width: $desktop-width) {
   .user-data__inner {
     display: flex;
@@ -152,7 +150,7 @@
 
   .user-data__submit-button-wrapper {
     align-items: center;
-    column-gap: 70px
+    column-gap: 70px;
   }
 
   .user-data__submit-button {

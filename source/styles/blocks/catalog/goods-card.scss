@@ -1,10 +1,10 @@
 .goods-card {
   padding-top: 13px;
   padding-bottom: 19px;
-  border-top: 1px solid #CDCDCD;
+  border-top: 1px solid #cdcdcd;
 
   &:last-child {
-    border-bottom: 1px solid #CDCDCD;
+    border-bottom: 1px solid #cdcdcd;
   }
 }
 
@@ -56,6 +56,7 @@
   }
 
   .goods-card__heading {
+    flex-basis: 50%;
     font-size: 20px;
     line-height: 20px;
   }
@@ -67,11 +68,6 @@
 
   .goods-card__wrapper {
     display: flex;
-
-  }
-
-  .goods-card__heading  {
-    flex-basis: 50%;
   }
 
   .goods-card__info-table {
